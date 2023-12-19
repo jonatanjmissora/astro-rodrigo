@@ -1,0 +1,25 @@
+---
+const btns = [
+  "Galeria de Imágenes",
+  "Tours Virtuales",
+  "Videos 360",
+  "Contacto",
+];
+---
+
+<article class="my-16">
+  <ul class="flex justify-center gap-4">
+    {
+      btns.map((btn) => (
+        <li>
+          <a
+            href="/gallery"
+            class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white "
+          >
+            {btn}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</article>

@@ -1,0 +1,18 @@
+---
+const { array, title } = Astro.props;
+---
+
+<div class="w-1/2">
+  <h3 class="py-4 my-4 mr-6 font-semibold text-3xl border-b-[1px] border-black">
+    {title}
+  </h3>
+  <ul>
+    {
+      array.map((element) => (
+        <li class="font-medium text-[1.65rem]  list-disc ml-5 px-2 text-gray-600">
+          {element}
+        </li>
+      ))
+    }
+  </ul>
+</div>

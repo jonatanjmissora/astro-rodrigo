@@ -1,0 +1,84 @@
+---
+const comercios = [
+  {
+    alt: "Punto Alem eventos",
+    title: "Punto_Alem_eventos",
+    src: "/assets/comercios/punto_alem.svg",
+  },
+  {
+    alt: "Hotel Orion",
+    title: "Hotel_Orion",
+    src: "/assets/comercios/hotel_orion.svg",
+  },
+  {
+    alt: "Moto Manía",
+    title: "Moto_Mania",
+    src: "/assets/comercios/moto_mania.svg",
+  },
+  {
+    alt: "Dexter",
+    title: "Dexter",
+    src: "/assets/comercios/dexter.svg",
+  },
+  {
+    alt: "Top5",
+    title: "Top5",
+    src: "/assets/comercios/top5.svg",
+  },
+  {
+    alt: "Top6",
+    title: "Top6",
+    src: "/assets/comercios/top6.svg",
+  },
+  {
+    alt: "Casali",
+    title: "Casali",
+    src: "/assets/comercios/casali.svg",
+  },
+  {
+    alt: "Varoba",
+    title: "Varoba",
+    src: "/assets/comercios/varoba.svg",
+  },
+  {
+    alt: "Alba Garcia",
+    title: "Alba_Garcia",
+    src: "/assets/comercios/alba_garcia.svg",
+  },
+  {
+    alt: "IAGRO",
+    title: "IAGRO",
+    src: "/assets/comercios/iagro.svg",
+  },
+  {
+    alt: "Ragazzi",
+    title: "Ragazzi",
+    src: "/assets/comercios/ragazzi.svg",
+  },
+  {
+    alt: "Teknomania",
+    title: "Teknomania",
+    src: "/assets/comercios/teknomania.svg",
+  },
+  {
+    alt: "Atila",
+    title: "Atila",
+    src: "/assets/comercios/atila.svg",
+  },
+];
+---
+
+<article class="mt-36 w-full">
+  <h2 class="text-3xl w-full py-4 my-8 border-b-2 border-black font-extrabold">
+    Trabajos
+  </h2>
+  <div class="grid grid-cols-5 gap-y-6 justify-items-center">
+    {
+      comercios.map((comercio) => (
+        <picture class="w-52 h-52 rounded-xl overflow-hidden shadow-xl">
+          <img src={comercio.src} alt={comercio.alt} />
+        </picture>
+      ))
+    }
+  </div>
+</article>
