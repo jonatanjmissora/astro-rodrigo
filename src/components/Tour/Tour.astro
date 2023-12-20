@@ -1,0 +1,40 @@
+---
+const { tours, alt } = Astro.props;
+---
+
+<article class="mt-20">
+  <div class="w-full flex justify-between items-center">
+    <h2 class="text-3xl font-semibold py-4">{alt}</h2>
+    <span class="border-b-2 border-black w-1/2"></span>
+    <label class="h-10 w-10">
+      <input class="hidden" type="checkbox" />
+      <svg
+        class="h-full w-full"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M6 15l6 -6l6 6"></path></svg
+      >
+    </label>
+  </div>
+  <div class="grid grid-cols-4 gap-2">
+    {
+      tours.map((foto, index) => (
+        <picture>
+          <img
+            class="w-full h-full rounded-lg"
+            src={foto}
+            alt="foto"
+            title={`${alt} ${index + 1}`}
+          />
+        </picture>
+      ))
+    }
+  </div>
+</article>

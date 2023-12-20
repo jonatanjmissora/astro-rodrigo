@@ -1,22 +1,22 @@
 ---
-const btns = [
-  "Galeria de Imágenes",
-  "Tours Virtuales",
-  "Videos 360",
-  "Contacto",
+const links = [
+  { text: "Galeria de Imágenes", src: "/gallery" },
+  { text: "Tours Virtuales", src: "/tours" },
+  { text: "Videos 360", src: "/videos" },
+  { text: "Contacto", src: "/contact" },
 ];
 ---
 
 <article class="my-16">
   <ul class="flex justify-center gap-4">
     {
-      btns.map((btn) => (
+      links.map((link) => (
         <li>
           <a
-            href="/gallery"
+            href={link.src}
             class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white "
           >
-            {btn}
+            {link.text}
           </a>
         </li>
       ))

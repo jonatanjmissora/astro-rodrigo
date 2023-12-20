@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Tour from "../components/Tour/Tour.astro";
+
+const cards = [
+  {
+    title: "Fácil implementación",
+    text: "La implementación es rápida, ya sea en páginas que usen plataformas CMS como WordPress u otros sistemas, lo único que se debe de hacer practicamente es subir ciertos archivos o imágenes.",
+  },
+  {
+    title: "Interacción",
+    text: "Lograrás un nivel de interacción mayor con tus clientes y posibles clientes al mostrarles tus servicos o productos de una forma única y poco convencional.",
+  },
+  {
+    title: "Diferenciación",
+    text: "Aún los tours virtuales no son muy conocidos, es por esto que si empiezas ya, será un punto de diferenciación frente a tus competidores.",
+  },
+  {
+    title: "Más ventas",
+    text: "Aumenta tus ventas al tener a tu público cautivado. Imagínate a tus clientes sintiendo y viendo a detalle, por ejemplo, una habitación y todos sus beneficios antes de estar en ella.",
+  },
+];
+
+const tours = [
+  {
+    title: "Salones",
+    tours: [
+      "/assets/comercios/punto_alem.svg",
+      "/assets/comercios/top5.svg",
+      "/assets/comercios/top6.svg",
+    ],
+  },
+  {
+    title: "Propiedades",
+    tours: [
+      "/assets/tours/propiedades/casaliprop1.webp",
+      "/assets/tours/propiedades/casaliprop2.webp",
+      "/assets/tours/propiedades/casaliprop3.webp",
+      "/assets/tours/propiedades/casaliprop4.webp",
+      "/assets/tours/propiedades/obra1.webp",
+    ],
+  },
+  {
+    title: "Comercios",
+    tours: [
+      "/assets/comercios/moto_mania.svg",
+      "/assets/comercios/dexter.svg",
+      "/assets/comercios/varoba.svg",
+      "/assets/comercios/ragazzi.svg",
+      "/assets/comercios/teknomania.svg",
+      "/assets/comercios/alba_garcia.svg",
+      "/assets/comercios/atila.svg",
+    ],
+  },
+  { title: "Hotelería", tours: ["/assets/comercios/hotel_orion.svg"] },
+];
+---
+
+<Layout title="Tour 360">
+  <section class="w-[75vw] mx-auto">
+    <article>
+      <h2 class="mt-16 text-3xl font-semibold">
+        ¿Qué es un Tour Virtual 360°?
+      </h2>
+
+      <p class="mt-8 text-xl font-regular leading-relaxed">
+        Empezaremos explicando, de la forma más fácil, que es un tour virtual de
+        360 grados. Un tour virtual es una herramienta digital e interactiva que
+        agrupa un conjunto de fotos de 360 grados y que atráves de estas se
+        genera un recorrido para mostrar espacios espefícios o de interés, por
+        ejemplo los distintos espacios dentro de un restaurante o un bar, el
+        salón de un auto y las diversas vistas de este o una habitación de hotel
+        con todos los beneficios que puede brindar. Además, que al ser una
+        herramienta digital, el tour virtual se puede visualizar en diversos
+        dispositivos como un smartphone, una tableta, una computadora
+        convencional de escritorio, una laptop o portatil o, para una opción más
+        inmersiva, con lentes de realidad virtual, esto hace que esta tecnología
+        esté al alcance de todos y en casi todos los dispositivos que hoy en día
+        usamos.
+      </p>
+
+      <div class="grid grid-cols-5 gap-4 mt-16">
+        {
+          cards.map((card) => (
+            <div class="bg-blue-500 rounded-xl">
+              <h3 class="text-xl font-semibold text-white p-2 border-b border-white block min-h-[5rem] text-center">
+                {card.title}
+              </h3>
+              <p class="font-medium text-white leading-relaxed py-4 px-2">
+                {card.text}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </article>
+
+    {tours.map((tour) => <Tour tours={tour.tours} alt={tour.title} />)}
+
+    <div class="w-full my-16 grid justify-center">
+      <a
+        class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white"
+        href="/">Inicio</a
+      >
+    </div>
+  </section>
+</Layout>
+
+<style></style>
