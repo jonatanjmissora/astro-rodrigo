@@ -1,8 +1,8 @@
 ---
-
+import LinkBtn from "../LinkBtn.astro";
 ---
 
-<article class="h-[75vh] flex justify-center items-center mt-20 relative">
+<article class="h-[75vh] flex justify-center items-center relative">
   <div class="relative w-[40%] h-full">
     <div class="w-full h-full">
       <h1 class="absolute top-[48%] -translate-y-1/2 text-[7rem] -left-1">
@@ -13,11 +13,12 @@
       >
         Fotografía Arquitectónica
       </h2>
-      <button
-        class="bg-blue-400 text-white py-5 px-[4rem] rounded-full text-3xl tracking-widest absolute bottom-[10%]"
-      >
-        Contacto</button
-      >
+
+      <LinkBtn
+        href="/contact"
+        text="Contacto"
+        className="absolute bottom-[10%]"
+      />
     </div>
   </div>
   <picture class="h-full w-[60%]">

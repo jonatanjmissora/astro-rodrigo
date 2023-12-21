@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Galeria from "../components/Gallery/Galeria.astro";
+import LinkBtn from "../components/LinkBtn.astro";
 
 const galleryIndex = [
   "Casali1",
@@ -117,7 +118,7 @@ const gallery = {
 ---
 
 <Layout title="Galleria">
-  <section class="w-[75vw] mx-auto">
+  <section class="w-[75vw] mx-auto mt-20">
     {
       galleryIndex.map((index) => (
         <Galeria
@@ -127,12 +128,9 @@ const gallery = {
       ))
     }
     <div class="w-full my-16 grid justify-center">
-      <a
-        class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white"
-        href="/">Inicio</a
-      >
+      <LinkBtn href="/" text="Inicio" />
     </div>
   </section>
-</Layout>
 
-<style></style>
+  <style></style>
+</Layout>

@@ -1,4 +1,5 @@
 ---
+import LinkBtn from "../LinkBtn.astro";
 const links = [
   { text: "Galeria de Imágenes", src: "/gallery" },
   { text: "Tours Virtuales", src: "/tours" },
@@ -10,14 +11,9 @@ const links = [
 <article class="my-16">
   <ul class="flex justify-center gap-4">
     {
-      links.map((link) => (
+      links.map(({ src, text }) => (
         <li>
-          <a
-            href={link.src}
-            class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white "
-          >
-            {link.text}
-          </a>
+          <LinkBtn href={src} text={text} />
         </li>
       ))
     }

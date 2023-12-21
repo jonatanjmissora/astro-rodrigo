@@ -1,15 +1,21 @@
 ---
+import LinkBtn from "../components/LinkBtn.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Video">
-  <section class="w-[75vw] mx-auto">
-    {}
+  <section class="w-[75vw] mx-auto mt-20">
+    <h2 class="text-3xl font-semibold">Videos 360</h2>
+    <video
+      class="mt-16"
+      src="https://firebasestorage.googleapis.com/v0/b/rodrigo-videos.appspot.com/o/VIDEOS%2FALBA%2Falba.mp4?alt=media&"
+      width="315"
+      height="315"
+      autoplay=""
+      muted
+      loop=""></video>
     <div class="w-full my-16 grid justify-center">
-      <a
-        class="px-6 py-3 rounded-3xl text-xl font-semibold bg-blue-400 text-white"
-        href="/">Inicio</a
-      >
+      <LinkBtn href="/" text="Inicio" />
     </div>
   </section>
 </Layout>
