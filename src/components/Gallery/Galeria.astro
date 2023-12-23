@@ -23,18 +23,34 @@ const { fotos, alt } = Astro.props;
       >
     </label>
   </div>
-  <div class="grid grid-cols-4 gap-2">
-    {
-      fotos.map((foto, index) => (
-        <picture>
-          <img
-            class="w-full h-full rounded-lg"
-            src={foto}
-            alt="foto"
-            title={`${alt} ${index + 1}`}
-          />
-        </picture>
-      ))
-    }
+  <div class="x">
+    <div class="grid grid-cols-4 gap-2 fotos-container mb-16">
+      {
+        fotos.map((foto, index) => (
+          <picture>
+            <img
+              class="w-full h-full rounded-lg border border-gray-300"
+              src={foto}
+              alt="foto"
+              title={`${alt} ${index + 1}`}
+            />
+          </picture>
+        ))
+      }
+    </div>
   </div>
 </article>
+
+<style>
+  .x {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 1s ease;
+  }
+  .x > div {
+    overflow: hidden;
+  }
+  .x:hover {
+    grid-template-rows: 1fr;
+  }
+</style>

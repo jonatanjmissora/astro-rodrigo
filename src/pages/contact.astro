@@ -32,9 +32,9 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- TELEFONOS -->
-          <div class="flex w-full justify-center items-center gap-4">
+          <div class="hover flex w-full justify-center items-center gap-2">
             <svg
-              class="w-8 h-8"
+              class="w-7 h-7"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -47,11 +47,11 @@ import Layout from "../layouts/Layout.astro";
                 d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
               ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
             >
-            <h4 class="text-2xl font-bold">291 5046309</h4>
+            <h4 class="text-2xl font-bold pt-[5px]">291 5046309</h4>
           </div>
-          <div class="flex w-full justify-center gap-4 mt-4">
+          <div class="hover flex w-full justify-center items-center gap-2">
             <svg
-              class="w-8 h-8"
+              class="w-7 h-7"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -64,11 +64,11 @@ import Layout from "../layouts/Layout.astro";
                 d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
               ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
             >
-            <h4 class="text-2xl font-bold">291 4319025</h4>
+            <h4 class="text-2xl font-bold pt-[5px]">291 4319025</h4>
           </div>
-          <div class="flex w-full justify-center items-center gap-4 mt-4">
+          <div class="hover flex w-full justify-center items-center gap-4 mt-4">
             <svg
-              class="w-8 h-8"
+              class="w-7 h-7"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -81,11 +81,11 @@ import Layout from "../layouts/Layout.astro";
                 d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
               ></path><path d="M3 7l9 6l9 -6"></path></svg
             >
-            <h4 class="text-2xl font-bold">rodrigomm.81@gmail.com</h4>
+            <h4 class="text-xl font-bold">rodrigomm.81@gmail.com</h4>
           </div>
           <div class="flex w-full justify-center items-center gap-8 mt-4">
             <svg
-              class="w-10 h-10"
+              class="w-10 h-10 socials"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -100,7 +100,7 @@ import Layout from "../layouts/Layout.astro";
             >
 
             <svg
-              class="w-11 h-11"
+              class="w-11 h-11 socials"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ import Layout from "../layouts/Layout.astro";
             >
 
             <svg
-              class="w-10 h-10"
+              class="w-10 h-10 socials"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -140,3 +140,27 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 </Layout>
+
+<style>
+  .hover {
+    cursor: pointer;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  .hover:hover {
+    transform: scale(1.1);
+    color: var(--hover);
+  }
+
+  .socials {
+    cursor: pointer;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  .socials:hover {
+    transform: scale(1.1);
+    color: var(--hover);
+  }
+</style>

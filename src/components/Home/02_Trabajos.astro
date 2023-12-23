@@ -72,13 +72,19 @@ const comercios = [
   <h2 class="text-3xl w-full py-4 my-8 border-b-2 border-black font-extrabold">
     Trabajos
   </h2>
-  <div class="grid grid-cols-5 gap-y-6 justify-items-center">
+  <div class="grid grid-cols-5 gap-6 justify-items-center">
     {
       comercios.map((comercio) => (
-        <picture class="w-52 h-52 rounded-xl overflow-hidden shadow-xl">
-          <img src={comercio.src} alt={comercio.alt} />
+        <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+          <img
+            class="w-full h-full object-cover"
+            src={comercio.src}
+            alt={comercio.alt}
+          />
         </picture>
       ))
     }
   </div>
 </article>
+
+<style></style>

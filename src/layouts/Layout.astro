@@ -71,6 +71,7 @@ const { title } = Astro.props;
 		--gold: #cca965;
 		--light-gold: rgb(242, 232, 211);
 		--blue: #192d4d;
+		--hover: rgb(16, 16, 148);
 		overflow-x: hidden;
 	}
 
@@ -202,6 +203,13 @@ const { title } = Astro.props;
 	input::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
+	}
+
+	.my-shadow-btn {
+		box-shadow: 0.25rem 0.25rem 0.35rem rgba(0, 0, 0, 0.4);
+	}
+	.my-shadow-outline {
+		box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.2);
 	}
 
 	html.lenis {
