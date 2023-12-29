@@ -1,9 +1,15 @@
 ---
 import LinkBtn from "../components/LinkBtn.astro";
+import PhoneSvg from "../components/icons/PhoneSvg.astro";
+import MailSvg from "../components/icons/MailSvg.astro";
+import FacebookSvg from "../components/icons/FacebookSvg.astro";
+import InstagramSvg from "../components/icons/InstagramSvg.astro";
+import WhatsappSvg from "../components/icons/WhatsappSvg.astro";
+import ContactPill from "../components/ContactPill.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Contacto">
+<Layout title="RM | Contacto">
   <section class="w-[75vw] mx-auto mt-10 h-screen grid place-items-center">
     <div>
       <div class="flex justify-center items-center">
@@ -31,105 +37,40 @@ import Layout from "../layouts/Layout.astro";
             />
           </div>
 
-          <!-- TELEFONOS -->
-          <div class="hover flex w-full justify-center items-center gap-2">
-            <svg
-              class="w-7 h-7"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
-              ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
-            >
-            <h4 class="text-2xl font-bold pt-[5px]">291 5046309</h4>
+          <div class="flex justify-center gap-12">
+            <ContactPill>
+              <PhoneSvg
+                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+              />
+               291-5046309
+            </ContactPill>
+            <ContactPill>
+              <PhoneSvg
+                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+              />
+               291-4319025
+            </ContactPill>
           </div>
-          <div class="hover flex w-full justify-center items-center gap-2">
-            <svg
-              class="w-7 h-7"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"
-              ></path><path d="M11 4h2"></path><path d="M12 17v.01"></path></svg
-            >
-            <h4 class="text-2xl font-bold pt-[5px]">291 4319025</h4>
-          </div>
-          <div class="hover flex w-full justify-center items-center gap-4 mt-4">
-            <svg
-              class="w-7 h-7"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-              ></path><path d="M3 7l9 6l9 -6"></path></svg
-            >
-            <h4 class="text-xl font-bold">rodrigomm.81@gmail.com</h4>
-          </div>
-          <div class="flex w-full justify-center items-center gap-8 mt-4">
-            <svg
-              class="w-10 h-10 socials"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-              ></path></svg
-            >
 
-            <svg
-              class="w-11 h-11 socials"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-              ></path><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-              ></path><path d="M16.5 7.5l0 .01"></path></svg
-            >
+          <div class="flex justify-center gap-12 py-4">
+            <ContactPill>
+              <MailSvg
+                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+              />
+               rodrigomm.81@gmail.com
+            </ContactPill>
+          </div>
 
-            <svg
-              class="w-10 h-10 socials"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path
-                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
-              ></path></svg
-            >
+          <div class="flex w-full justify-center items-center gap-8">
+            <FacebookSvg
+              class="w-10 h-10 text-[var(--black)] hover:text-blue-400 hover:scale-110 transition-all duration-300"
+            />
+            <InstagramSvg
+              class="w-11 h-11 text-[var(--black)] hover:text-blue-400 hover:scale-110 transition-all duration-300"
+            />
+            <WhatsappSvg
+              class="w-10 h-10 text-[var(--black)] hover:text-blue-400 hover:scale-110 transition-all duration-300"
+            />
           </div>
         </div>
       </div>
@@ -140,27 +81,3 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 </Layout>
-
-<style>
-  .hover {
-    cursor: pointer;
-    transition:
-      color 0.3s ease,
-      transform 0.3s ease;
-  }
-  .hover:hover {
-    transform: scale(1.1);
-    color: var(--hover);
-  }
-
-  .socials {
-    cursor: pointer;
-    transition:
-      color 0.3s ease,
-      transform 0.3s ease;
-  }
-  .socials:hover {
-    transform: scale(1.1);
-    color: var(--hover);
-  }
-</style>

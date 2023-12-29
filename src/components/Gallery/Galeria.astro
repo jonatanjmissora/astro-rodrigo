@@ -27,9 +27,13 @@ const { fotos, alt } = Astro.props;
     <div class="grid grid-cols-4 gap-2 fotos-container mb-16">
       {
         fotos.map((foto, index) => (
-          <picture>
+          <picture
+            class={`border border-gray-300 rounded-lg overflow-hidden bg-black/10 min-h-[250px] ${
+              foto.includes("360.svg") && "cursor-pointer p-16"
+            }`}
+          >
             <img
-              class="w-full h-full rounded-lg border border-gray-300"
+              class="w-full h-full"
               src={foto}
               alt="foto"
               title={`${alt} ${index + 1}`}
@@ -42,7 +46,7 @@ const { fotos, alt } = Astro.props;
 </article>
 
 <style>
-  .x {
+  /* .x {
     display: grid;
     grid-template-rows: 0fr;
     transition: all 1s ease;
@@ -52,5 +56,5 @@ const { fotos, alt } = Astro.props;
   }
   .x:hover {
     grid-template-rows: 1fr;
-  }
+  } */
 </style>

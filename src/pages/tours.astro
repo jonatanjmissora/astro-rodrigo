@@ -26,9 +26,9 @@ const tours = [
   {
     title: "Salones",
     tours: [
-      "/assets/comercios/punto_alem.svg",
-      "/assets/comercios/top5.svg",
-      "/assets/comercios/top6.svg",
+      "/assets/trabajos/punto_alem.svg",
+      "/assets/trabajos/top5.svg",
+      "/assets/trabajos/top6.svg",
     ],
   },
   {
@@ -44,25 +44,25 @@ const tours = [
   {
     title: "Comercios",
     tours: [
-      "/assets/comercios/moto_mania.svg",
-      "/assets/comercios/dexter.svg",
-      "/assets/comercios/varoba.svg",
-      "/assets/comercios/ragazzi.svg",
-      "/assets/comercios/teknomania.svg",
-      "/assets/comercios/alba_garcia.svg",
-      "/assets/comercios/atila.svg",
+      "/assets/trabajos/moto_mania.svg",
+      "/assets/trabajos/dexter.svg",
+      "/assets/trabajos/varoba.svg",
+      "/assets/trabajos/ragazzi.svg",
+      "/assets/trabajos/teknomania.svg",
+      "/assets/trabajos/alba_garcia.svg",
+      "/assets/trabajos/atila.svg",
     ],
   },
-  { title: "Hotelería", tours: ["/assets/comercios/hotel_orion.svg"] },
+  { title: "Hotelería", tours: ["/assets/trabajos/hotel_orion.svg"] },
 ];
 ---
 
-<Layout title="Tour 360">
+<Layout title="RM | Tour 360">
   <section class="w-[75vw] mx-auto mt-20">
     <article>
       <h2 class="text-3xl font-semibold">¿Qué es un Tour Virtual 360°?</h2>
 
-      <p class="mt-8 text-xl font-regular leading-relaxed">
+      <p class="mt-8 text-xl font-regular leading-relaxed text-pretty">
         Empezaremos explicando, de la forma más fácil, que es un tour virtual de
         360 grados. Un tour virtual es una herramienta digital e interactiva que
         agrupa un conjunto de fotos de 360 grados y que atráves de estas se
@@ -83,7 +83,7 @@ const tours = [
           cards.map((card) => (
             <div class="bg-blue-500 rounded-xl my-shadow-outline">
               <div class="h-24 border-b flex justify-center items-center">
-                <h3 class="text-xl font-semibold text-white py-4 text-center">
+                <h3 class="text-xl font-semibold text-white py-4 px-4 text-center">
                   {card.title}
                 </h3>
               </div>

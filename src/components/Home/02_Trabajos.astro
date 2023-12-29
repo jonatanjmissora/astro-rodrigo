@@ -1,69 +1,69 @@
 ---
-const comercios = [
+const trabajos = [
   {
     alt: "Punto Alem eventos",
     title: "Punto_Alem_eventos",
-    src: "/assets/comercios/punto_alem.svg",
+    src: "/assets/trabajos/punto_alem.svg",
   },
   {
     alt: "Hotel Orion",
     title: "Hotel_Orion",
-    src: "/assets/comercios/hotel_orion.svg",
+    src: "/assets/trabajos/hotel_orion.svg",
   },
   {
     alt: "Moto Manía",
     title: "Moto_Mania",
-    src: "/assets/comercios/moto_mania.svg",
+    src: "/assets/trabajos/moto_mania.svg",
   },
   {
     alt: "Dexter",
     title: "Dexter",
-    src: "/assets/comercios/dexter.svg",
+    src: "/assets/trabajos/dexter.svg",
   },
   {
     alt: "Top5",
     title: "Top5",
-    src: "/assets/comercios/top5.svg",
+    src: "/assets/trabajos/top5.svg",
   },
   {
     alt: "Top6",
     title: "Top6",
-    src: "/assets/comercios/top6.svg",
+    src: "/assets/trabajos/top6.svg",
   },
   {
     alt: "Casali",
     title: "Casali",
-    src: "/assets/comercios/casali.svg",
+    src: "/assets/trabajos/casali.svg",
   },
   {
     alt: "Varoba",
     title: "Varoba",
-    src: "/assets/comercios/varoba.svg",
+    src: "/assets/trabajos/varoba.svg",
   },
   {
     alt: "Alba Garcia",
     title: "Alba_Garcia",
-    src: "/assets/comercios/alba_garcia.svg",
+    src: "/assets/trabajos/alba_garcia.svg",
   },
   {
     alt: "IAGRO",
     title: "IAGRO",
-    src: "/assets/comercios/iagro.svg",
+    src: "/assets/trabajos/iagro.svg",
   },
   {
     alt: "Ragazzi",
     title: "Ragazzi",
-    src: "/assets/comercios/ragazzi.svg",
+    src: "/assets/trabajos/ragazzi.svg",
   },
   {
     alt: "Teknomania",
     title: "Teknomania",
-    src: "/assets/comercios/teknomania.svg",
+    src: "/assets/trabajos/teknomania.svg",
   },
   {
     alt: "Atila",
     title: "Atila",
-    src: "/assets/comercios/atila.svg",
+    src: "/assets/trabajos/atila.svg",
   },
 ];
 ---
@@ -74,12 +74,12 @@ const comercios = [
   </h2>
   <div class="grid grid-cols-5 gap-6 justify-items-center">
     {
-      comercios.map((comercio) => (
+      trabajos.map((trabajo) => (
         <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
           <img
             class="w-full h-full object-cover"
-            src={comercio.src}
-            alt={comercio.alt}
+            src={trabajo.src}
+            alt={trabajo.alt}
           />
         </picture>
       ))
