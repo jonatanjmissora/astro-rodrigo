@@ -1,35 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Home/01_Hero.astro";
-import Trabajos from "../components/Home/02_Trabajos.astro";
-import Experiencia from "../components/Home/03_Experiencia_.astro";
-import Foot_Buttons from "../components/Home/04_Foot_Buttons.astro";
+import Hero from "../components/01_Hero.astro";
+import Empresas from "../components/02_Empresas.astro";
+import Experiencia from "../components/03_Experiencia_.astro";
+import Galeria from "../components/04_Galeria.astro";
+import Galeria2 from "../components/04_Galeria2.astro";
+import Tours from "../components/05_Tours.astro";
+import Contact from "../components/06_Contact.astro";
 ---
 
 <Layout title="Rodrigo Mose | Fotografía arquitectónica">
 	<section class="w-[75vw] mx-auto mt-32">
 		<Hero />
-		<Trabajos />
+		<Empresas />
 		<Experiencia />
-		<Foot_Buttons />
+		<!-- <Galeria /> -->
+		<Galeria2 />
+		<Tours />
+		<Contact />
 	</section>
 </Layout>
 
 <style></style>
 
 <!-- 
-		ALL:			animation -> frame motion
-							scroll smoth
+		ALL:			animaciones: frame motion -> viewTrasitions -> scroll()
+							lenis
 
 		HEADER : 	link active
 							movil design/code 
 
-		MAIN:			working links
-	
 		GALLERY: 	show/hidde gallery
 
-		TOURS:		working links
+		TOURS:   falta el loading
 
-		CONTACT		working links
+		<IMAGES />  porque si saco las imagenes de public y utilizo <Images/> me tarda mas en cargar?
 
+		ROBOTS y SITEMAP
 	-->

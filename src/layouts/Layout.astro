@@ -15,11 +15,11 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
-			content="Punto Alem. Nos dedicamos a la organización de eventos sociales y corporativos, con una trayectoria de más de 20 años de experiencia."
+			content="Rodrigo Mose. Arquitectura & Minimalismo, Servicios Inmobiliarios, Tours Virtuales 360°, Obras. Renders. Diseño y Desarrollo Web."
 		/>
 		<meta
 			name="keywords"
-			content="salon, catering, fiestas, casamiento, cumpleaños, eventos, aire libre, gourmet"
+			content="foto, fotografia, arquitectura, obra, inmobiliaria, minimalismo, tour virtual, tour 360, fine art"
 		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
@@ -36,7 +36,7 @@ const { title } = Astro.props;
 
 <style is:global>
 	:root {
-		--body-bg: rgb(248, 248, 248);
+		--body-bg: #f8f8f8;
 		--white: #e1e1e1;
 		--black: #313131;
 		--navbar-desktop-height: 3rem;
@@ -54,7 +54,7 @@ const { title } = Astro.props;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		scroll-behavior: smooth;
+		/* scroll-behavior: smooth; */
 		outline: none;
 		text-decoration: none;
 		list-style: none;
@@ -66,7 +66,7 @@ const { title } = Astro.props;
 		color: var(--black);
 		line-height: 1.5;
 		-webkit-text-size-adjust: 100%;
-		scroll-padding-top: calc(var(--navbar-desktop-height) - 1px);
+		scroll-padding-top: calc(var(--navbar-desktop-height) + 4rem);
 		overflow-x: hidden;
 	}
 
@@ -183,6 +183,9 @@ const { title } = Astro.props;
 	}
 	.my-shadow-outline {
 		box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.2);
+	}
+	.my-shadow-outline:hover {
+		box-shadow: 0 0 0.5rem 0.25rem rgb(112, 112, 199);
 	}
 
 	html.lenis {

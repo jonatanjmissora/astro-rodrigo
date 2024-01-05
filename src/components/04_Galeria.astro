@@ -1,0 +1,16 @@
+---
+import Galeria from "./Galeria.astro";
+import { gallery, galleryCollections } from "../fotos.js";
+---
+
+<section id="gallery" class="w-[75vw] mx-auto mt-20">
+  {
+    galleryCollections.map((index) => (
+      <Galeria
+        id={gallery[index].id}
+        fotos={gallery[index].fotos}
+        alt={`${gallery[index].nombre}`}
+      />
+    ))
+  }
+</section>

@@ -1,8 +1,8 @@
 ---
-import LinkBtn from "../LinkBtn.astro";
+import LinkBtn from "./LinkBtn.astro";
 ---
 
-<article class="h-[75vh] flex justify-center items-center relative">
+<section id="inicio" class="h-[75vh] flex justify-center items-center relative">
   <div class="relative w-[40%] h-full">
     <div class="w-full h-full">
       <h1 class="absolute top-[48%] -translate-y-1/2 text-[7rem] -left-1">
@@ -14,11 +14,11 @@ import LinkBtn from "../LinkBtn.astro";
         Fotografía Arquitectónica
       </h2>
 
-      <LinkBtn
-        href="/contact"
-        text="Contacto"
-        className="absolute bottom-[20%]"
-      />
+      <a
+        href="#contact"
+        class="absolute bottom-[10%] text-3xl font-bold text-white bg-blue-500 rounded-[2rem] py-4 px-8 hover:bg-blue-700 my-shadow-outline"
+        >Contacto</a
+      >
     </div>
   </div>
   <picture class="h-full w-[60%]">
@@ -26,6 +26,8 @@ import LinkBtn from "../LinkBtn.astro";
       class="h-full w-full object-cover rounded-lg"
       src="/assets/hero.webp"
       alt="portada 1"
+      loading="lazy"
+      decoding="async"
     />
   </picture>
-</article>
+</section>
