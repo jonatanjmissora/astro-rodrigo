@@ -1,0 +1,143 @@
+---
+import { trabajos } from "../../trabajos";
+import ChevronLeft from "../../components/icons/ChevronLeft.astro";
+import TourSvg from "../../components/icons/TourSvg.astro";
+export function getStaticPaths() {
+  return [
+    { params: { id: "bahia01" } },
+    { params: { id: "casali00" } },
+    { params: { id: "casali01" } },
+    { params: { id: "casali02" } },
+    { params: { id: "casali03" } },
+    { params: { id: "casali04" } },
+    { params: { id: "obra01" } },
+    { params: { id: "iagro01" } },
+    { params: { id: "mini01" } },
+  ];
+}
+
+const { id } = Astro.params;
+---
+
+<section>
+  <div
+    class="w-full flex justify-between items-center shadow fixed top-0 bg-[#f8f8f8] z-40 px-8"
+  >
+    <a href=`/#gallery`>
+      <h2 class="text-3xl font-bold py-4 flex items-center gap-4">
+        <ChevronLeft class="w-8 h-8" />
+        Volver
+      </h2>
+    </a>
+  </div>
+
+  <h2
+    class="text-3xl font-bold pt-4 pb-2 mt-20 mb-2 border-b border-black w-[75vw] mx-auto"
+  >
+    {trabajos[id].nombre}
+  </h2>
+
+  <article class="w-[75vw] mx-auto h-[80vh] flex justify-between">
+    <div class="w-[78%] relative overflow-hidden">
+      <img
+        class="w-full h-full object-cover object-center"
+        src={trabajos[id].galeria[1]}
+        alt={trabajos[id].galeria[1]}
+      />
+      {
+        trabajos[id].tour !== "" && (
+          <div class="absolute bottom-4 left-4 z-10 card-icon icon-left rounded-full  h-20 w-20 flex flex-col justify-center items-center ">
+            <a
+              href={`/tours/${id}`}
+              class="spinner hover:text-blue-500 cursor-pointer"
+            >
+              <p class="font-bold text-center text-xl">Vista</p>
+              <TourSvg class="w-11 h-11" />
+            </a>
+          </div>
+        )
+      }
+    </div>
+    <div class="w-[20%] flex flex-col gap-2 overflow-y-auto aside">
+      {
+        trabajos[id].galeria.map((foto) => (
+          <div class="h-[250px] w-full ">
+            <img
+              class="w-full h-full object-cover object-center"
+              src={foto}
+              alt={foto}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </article>
+
+  <!-- <article class="w-[75vw] mx-auto mt-36 mb-36 grid grid-cols-2 gap-4">
+    {
+      trabajos[id].galeria.map((foto) => (
+        <div class="max-h-[80vh] relative overflow-hidden">
+          <h3 class="text-3xl font-bold absolute top-0 right-0 py-4 px-6 z-10 card-title">
+            {trabajos[id].nombre}
+          </h3>
+          <img
+            class="w-full h-full object-cover object-center"
+            src={foto}
+            alt={foto}
+          />
+          {trabajos[id].tour !== "" && (
+            <div class="absolute bottom-4 left-4 z-10 card-icon icon-left rounded-full  h-20 w-20 flex flex-col justify-center items-center ">
+              <a
+                href={`/tours/${id}`}
+                class="spinner hover:text-blue-500 cursor-pointer"
+              >
+                <p class="font-bold text-center text-xl">Vista</p>
+                <TourSvg class="w-11 h-11" />
+              </a>
+            </div>
+          )}
+        </div>
+      ))
+    }
+    <div class="h-36 w-full"></div>
+  </article> -->
+</section>
+
+<style>
+  .shadow {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  .card-icon::after {
+    position: absolute;
+    z-index: -10;
+    content: "";
+    inset: 0;
+    right: -50%;
+    left: -100%;
+    top: -175%;
+    height: 300%;
+    background: linear-gradient(
+      rgb(248, 248, 248, 0.9) 50%,
+      rgb(248, 248, 248, 0)
+    );
+    filter: blur(5px);
+    transform: rotate(25deg);
+  }
+
+  .icon-left::after {
+    left: -150%;
+    right: -200%;
+    top: -50%;
+    height: 250%;
+    transform: rotate(-145deg);
+  }
+  .spinner {
+    perspective: 500px;
+    animation: spin 1s linear infinite alternate;
+  }
+  @keyframes spin {
+    to {
+      transform: rotateY(90deg);
+    }
+  }
+</style>

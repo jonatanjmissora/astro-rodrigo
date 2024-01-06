@@ -4,7 +4,6 @@ export const trabajos = {
     categoria: "Apart Hotel",
     portada: "/assets/gallery/bahia1/bahiaconfort01.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/bahia1/bahiaconfort01.webp",
       "/assets/gallery/bahia1/bahiaconfort02.webp",
       "/assets/gallery/bahia1/bahiaconfort03.webp",
@@ -48,7 +47,6 @@ export const trabajos = {
     categoria: "Propiedades",
     portada: "/assets/gallery/casali0/casaliprop6.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/casali0/casaliprop1.webp",
       "/assets/gallery/casali0/casaliprop2.webp",
       "/assets/gallery/casali0/casaliprop3.webp",
@@ -64,7 +62,6 @@ export const trabajos = {
     categoria: "Propiedades",
     portada: "/assets/gallery/casali1/casaliprop2.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/casali1/casaliprop1.webp",
       "/assets/gallery/casali1/casaliprop2.webp",
       "/assets/gallery/casali1/casaliprop3.webp",
@@ -73,14 +70,13 @@ export const trabajos = {
       "/assets/gallery/casali1/casaliprop6.webp",
       "/assets/gallery/casali1/casaliprop7.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/d5dc8dcf-cf4d-4bbf-99d1-c4f72b2dd875",
+    tour: "https://www.keepeyeonball.com/Tour/d5dc8dcf-cf4d-4bbf-99d1-c4f72b2dd875/4K?sc=4",
   },
   "casali02": {
     nombre: "Casali Prop",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali2/casaliprop1.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/casali2/casaliprop1.webp",
       "/assets/gallery/casali2/casaliprop2.webp",
       "/assets/gallery/casali2/casaliprop3.webp",
@@ -96,7 +92,6 @@ export const trabajos = {
     categoria: "Propiedades",
     portada: "/assets/gallery/casali3/casaliprop05.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/casali3/casaliprop01.webp",
       "/assets/gallery/casali3/casaliprop02.webp",
       "/assets/gallery/casali3/casaliprop03.webp",
@@ -116,7 +111,6 @@ export const trabajos = {
     categoria: "Propiedades",
     portada: "/assets/gallery/casali4/casaliprop04.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/casali4/casaliprop01.webp",
       "/assets/gallery/casali4/casaliprop02.webp",
       "/assets/gallery/casali4/casaliprop03.webp",
@@ -140,7 +134,6 @@ export const trabajos = {
     categoria: "Propiedades",
     portada: "/assets/gallery/obra/obra1.webp",
     galeria: [
-      "/assets/360.svg",
       "/assets/gallery/obra/obra1.webp",
       "/assets/gallery/obra/obra2.webp",
       "/assets/gallery/obra/obra3.webp",
@@ -164,7 +157,7 @@ export const trabajos = {
     tour: "",
   },
   "mini01": {
-    nombre: "Minimalismo",
+    nombre: "Fine Art & Minimalismo",
     categoria: "Propia",
     portada: "/assets/gallery/Minimalismo/minimal1.webp",
     galeria: [
@@ -231,14 +224,14 @@ export const trabajos = {
   },
 }
 
-export const tourCategorias = [
+export const categorias = [
   {
     nombre: "Apart Hotel",
     tours: ["bahia01", "orion01"]
   },
   {
     nombre: "Propiedades",
-    tours: ["casali00", "casali01", "casali02", "casali03", "casali04", "obra01"]
+    tours: ["casali00", "casali01", "casali02", "casali03", "casali04", "casali05"]
   },
   {
     nombre: "Salones",
@@ -249,15 +242,3 @@ export const tourCategorias = [
     tours: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01"]
   }
 ]
-
-export const galeriaColecciones = [
-  "bahia01",
-  "casali00",
-  "casali01",
-  "casali02",
-  "casali03",
-  "casali04",
-  "obra01",
-  "iagro01",
-  "mini01",
-];

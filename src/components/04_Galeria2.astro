@@ -5,11 +5,21 @@ import TourSvg from "./icons/TourSvg.astro";
 ---
 
 <section id="gallery" class="w-[75vw] mx-auto mt-20">
-  <h2 class="text-3xl font-bold py-4 mb-8 border-b border-black">Trabajos</h2>
+  <h2 class="text-2xl font-bold py-4 mb-8 border-b border-black">
+    Apart Hotel
+  </h2>
+  <h2 class="text-2xl font-bold py-4 mb-8 border-b border-black">
+    Propiedades
+  </h2>
+  <h2 class="text-2xl font-bold py-4 mb-8 border-b border-black">Salones</h2>
+  <h2 class="text-2xl font-bold py-4 mb-8 border-b border-black">Comercios</h2>
+  <h2 class="text-xl font-bold py-4 mb-8 border-b border-black">
+    Fine Art & Minimalismo
+  </h2>
   <div class="grid grid-cols-2 xl:grid-cols-4 gap-3">
     {
       galeriaColecciones.map((coleccion) => (
-        <a href="">
+        <a href={`/galeria/${coleccion}`}>
           <div class="relative border border-gray-300 rounded-lg overflow-hidden">
             <h3 class="font-bold absolute top-0 py-2 px-4 w-full z-10 card-title">
               {trabajos[coleccion].nombre}
@@ -20,11 +30,13 @@ import TourSvg from "./icons/TourSvg.astro";
               alt="img"
             />
             <div class="absolute bottom-0 right-0 z-10 card-icon icon-right ">
-              <CameraSvg class="w-5 h-5 md:h-8 md:w-8 m-2 hover:text-blue-500" />
+              <CameraSvg class="w-5 h-5 md:h-8 md:w-8 m-2 hover:text-[var(--primary)]" />
             </div>
             {trabajos[coleccion].tour && (
               <div class="absolute bottom-0 left-0 z-10 card-icon icon-left">
-                <TourSvg class="w-12 h-10 p-1 hover:text-blue-500" />
+                <div class="spinner">
+                  <TourSvg class="w-12 h-10 p-1 hover:text-[var(--primary)]" />
+                </div>
               </div>
             )}
           </div>
@@ -64,5 +76,14 @@ import TourSvg from "./icons/TourSvg.astro";
     top: -50%;
     height: 200%;
     transform: rotate(-150deg);
+  }
+  .spinner {
+    perspective: 500px;
+    animation: spin 1s linear infinite alternate;
+  }
+  @keyframes spin {
+    to {
+      transform: rotateY(90deg);
+    }
   }
 </style>

@@ -36,13 +36,11 @@ const { title } = Astro.props;
 
 <style is:global>
 	:root {
-		--body-bg: #f8f8f8;
+		--body-bg: rgb(248, 248, 248);
 		--white: #e1e1e1;
 		--black: #313131;
 		--navbar-desktop-height: 3rem;
-		--gold: #cca965;
-		--light-gold: rgb(242, 232, 211);
-		--blue: #192d4d;
+		--primary: rgb(59, 130, 246);
 		--hover: rgb(16, 16, 148);
 		overflow-x: hidden;
 		color-scheme: light dark;
@@ -169,7 +167,26 @@ const { title } = Astro.props;
 	}
 
 	::-webkit-scrollbar {
-		/* width: 0px; */
+		width: 0px;
+	}
+	/* width */
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgb(59, 130, 246);
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
 	}
 
 	input::-webkit-outer-spin-button,
