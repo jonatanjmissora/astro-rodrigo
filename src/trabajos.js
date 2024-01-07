@@ -129,8 +129,8 @@ export const trabajos = {
     ],
     tour: "https://www.keepeyeonball.com/Tour/5a9f008e-d8c7-42af-812a-36ef16abc16d",
   },
-  "obra01": {
-    nombre: "Avance de obra",
+  "casali05": {
+    nombre: "Casali Prop",
     categoria: "Propiedades",
     portada: "/assets/gallery/obra/obra1.webp",
     galeria: [
@@ -227,18 +227,18 @@ export const trabajos = {
 export const categorias = [
   {
     nombre: "Apart Hotel",
-    tours: ["bahia01", "orion01"]
+    colecciones: ["bahia01", "orion01"]
   },
   {
     nombre: "Propiedades",
-    tours: ["casali00", "casali01", "casali02", "casali03", "casali04", "casali05"]
+    colecciones: ["casali00", "casali01", "casali02", "casali03", "casali04", "casali05"]
   },
   {
     nombre: "Salones",
-    tours: ["alem01", "top501", "top601"]
+    colecciones: ["alem01", "top501", "top601"]
   },
   {
     nombre: "Comercios",
-    tours: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01"]
+    colecciones: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01"]
   }
 ]
