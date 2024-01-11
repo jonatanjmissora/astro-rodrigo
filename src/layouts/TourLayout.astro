@@ -1,0 +1,230 @@
+---
+import "@fontsource/poppins";
+import HeaderTour from "../components/HeaderTour.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Rodrigo Mose. Arquitectura & Minimalismo, Servicios Inmobiliarios, Tours Virtuales 360°, Obras. Renders. Diseño y Desarrollo Web."
+    />
+    <meta
+      name="keywords"
+      content="foto, fotografia, arquitectura, obra, inmobiliaria, minimalismo, tour virtual, tour 360, fine art"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <HeaderTour />
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --body-bg: rgb(248, 248, 248);
+    --white: #e1e1e1;
+    --black: #313131;
+    --navbar-desktop-height: 3rem;
+    --primary: rgb(59, 130, 246);
+    --hover: rgb(16, 16, 148);
+    overflow-x: hidden;
+    color-scheme: light dark;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+  }
+
+  html {
+    font-size: calc(0.4vw + 1vh + 0.15vmin);
+    color: var(--black);
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--navbar-desktop-height) + 4rem);
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    background: var(--body-bg);
+    color: var(--black);
+    position: relative;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 4px;
+  }
+
+  code,
+  pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font: inherit;
+    color: inherit;
+    line-height: 1.35;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+  }
+
+  a {
+    border: none;
+  }
+
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 0.5em 1em;
+  }
+
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  [type="search"] {
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59, 130, 246);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .my-shadow-btn {
+    box-shadow: 0.25rem 0.25rem 0.35rem rgba(0, 0, 0, 0.4);
+  }
+  .my-shadow-outline {
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.2);
+  }
+  .my-shadow-outline:hover {
+    box-shadow: 0 0 0.5rem 0.25rem rgb(112, 112, 199);
+  }
+
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  @media (max-width: 760px) {
+    :root {
+      --navbar-desktop-height: 4.5rem;
+    }
+  }
+</style>

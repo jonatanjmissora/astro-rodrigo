@@ -1,0 +1,20 @@
+---
+import { trabajos } from "../trabajos";
+---
+
+<section class="mt-20">
+  <h2 class="text-2xl font-bold py-4 mb-8 border-b border-gray-500">
+    Fine Art & Minimalismo
+  </h2>
+  <div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
+    {
+      trabajos["mini01"].galeria.map((foto) => (
+        <img
+          class="w-full object-cover object-center border border-gray-300 rounded-lg"
+          src={foto}
+          alt={`imagen de ${foto}`}
+        />
+      ))
+    }
+  </div>
+</section>

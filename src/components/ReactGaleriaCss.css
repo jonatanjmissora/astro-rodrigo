@@ -1,0 +1,32 @@
+.card-icon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  inset: 0;
+  left: -10%;
+  top: -100%;
+  height: 250%;
+  background: linear-gradient(rgb(248, 248, 248, 0.9) 50%,
+      rgb(248, 248, 248, 0));
+  filter: blur(5px);
+  transform: rotate(-10deg);
+}
+
+.icon-right::after {
+  left: -200%;
+  right: -200%;
+  top: -100%;
+  height: 250%;
+  transform: rotate(45deg);
+}
+
+.spinner {
+  perspective: 500px;
+  animation: spin 1s linear infinite alternate;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateY(90deg);
+  }
+}

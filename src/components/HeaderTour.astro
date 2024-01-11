@@ -1,0 +1,26 @@
+---
+import Cancel from "./icons/Cancel.astro";
+---
+
+<header
+  class="px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-[3.5rem] bg-my-body z-40"
+>
+  <picture class="h-8">
+    <img
+      class="h-full w-full object-cover"
+      src="/assets/firmablack.webp"
+      alt="firma empresa"
+      loading="lazy"
+      decoding="async"
+    />
+  </picture>
+  <a href="/#tours">
+    <Cancel class="w-8 h-8 cursor-pointer" />
+  </a>
+</header>
+
+<style>
+  .shadow {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+</style>

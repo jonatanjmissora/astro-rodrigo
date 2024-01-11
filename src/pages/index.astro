@@ -4,18 +4,18 @@ import Hero from "../components/01_Hero.astro";
 import Empresas from "../components/02_Empresas.astro";
 import Experiencia from "../components/03_Experiencia_.astro";
 import Galeria from "../components/04_Galeria.astro";
-import Galeria2 from "../components/04_Galeria2.astro";
+import Galeria_FA from "../components/04_Galeria_FA.astro";
 import Tours from "../components/05_Tours.astro";
 import Contact from "../components/06_Contact.astro";
 ---
 
 <Layout title="Rodrigo Mose | Fotografía arquitectónica">
-	<section class="w-[75vw] mx-auto mt-32">
+	<section class="w-full mt-32">
 		<Hero />
 		<Empresas />
 		<Experiencia />
-		<!-- <Galeria /> -->
-		<Galeria2 />
+		<Galeria />
+		<Galeria_FA />
 		<Tours />
 		<Contact />
 	</section>
@@ -27,12 +27,8 @@ import Contact from "../components/06_Contact.astro";
 		ALL:			animaciones: frame motion -> viewTrasitions -> scroll()
 							lenis
 
-		HEADER : 	link active
+		HEADER : 	link active con isInView?
 							movil design/code 
-
-		GALLERY: 	show/hidde gallery
-
-		TOURS:   falta el loading
 
 		<IMAGES />  porque si saco las imagenes de public y utilizo <Images/> me tarda mas en cargar?
 

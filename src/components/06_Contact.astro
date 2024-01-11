@@ -7,13 +7,10 @@ import WhatsappSvg from "../components/icons/WhatsappSvg.astro";
 import ContactPill from "../components/ContactPill.astro";
 ---
 
-<section
-  id="contact"
-  class="w-[75vw] mx-auto mt-28 h-screen flex justify-center"
->
+<section class="w-full my-40 sm:mt-[30vh] flex justify-center">
   <div>
-    <div class="flex justify-center items-center h-[70vh]">
-      <picture class="h-full">
+    <div class="sm:flex justify-center items-center sm:h-[70vh]">
+      <picture class="sm:h-full sm:w-1/2">
         <img
           class="w-full h-full object-cover rounded-lg"
           src="/assets/contact1.webp"
@@ -23,9 +20,12 @@ import ContactPill from "../components/ContactPill.astro";
         />
       </picture>
       <!-- LADO DERECHO -->
-      <div class="w-1/2 h-full flex flex-col justify-between">
+      <div
+        id="contact"
+        class="w-full sm:w-1/2 sm:h-full flex flex-col justify-between gap-4 sm:gap-0"
+      >
         <!-- FRASE -->
-        <p class="font-medium leading-relaxed text-2xl px-16">
+        <p class="font-medium leading-relaxed text-2xl p-12 pb-4 sm:px-16">
           "Me fascina mi trabajo e intento transmitir esta pasión en cada uno de
           los proyectos que realizo"
         </p>
@@ -49,7 +49,7 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <PhoneSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+                class="absolute -left-7 h-9 w-9 border-2 border-my-body rounded-full p-1 bg-my-black"
               />
               291-5046309
             </ContactPill>
@@ -62,7 +62,7 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <PhoneSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
               />
               291-4319025
             </ContactPill>
@@ -78,7 +78,7 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <MailSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
               />
               rodrigomm.81@gmail.com
             </ContactPill>
@@ -92,7 +92,7 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <MailSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-[var(--white)] rounded-full p-1 bg-[var(--black)]"
+                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
               />
               rodrigomm.81@gmail.com
             </ContactPill>
@@ -106,7 +106,7 @@ import ContactPill from "../components/ContactPill.astro";
             href="https://www.facebook.com/rodrigomose"
           >
             <FacebookSvg
-              class="w-10 h-10 text-[var(--black)] hover:text-[var(--primary)] hover:scale-110 transition-transform"
+              class="w-10 h-10 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
             />
           </a>
 
@@ -116,7 +116,7 @@ import ContactPill from "../components/ContactPill.astro";
             href="https://www.instagram.com/rodrigomphotos/"
           >
             <InstagramSvg
-              class="w-11 h-11 text-[var(--black)] hover:text-[var(--primary)] hover:scale-110 transition-transform"
+              class="w-11 h-11 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
             />
           </a>
 
@@ -126,7 +126,7 @@ import ContactPill from "../components/ContactPill.astro";
             href="https://wa.me/+5492915046309"
           >
             <WhatsappSvg
-              class="w-10 h-10 text-[var(--black)] hover:text-[var(--primary)] hover:scale-110 transition-transform"
+              class="w-10 h-10 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
             />
           </a>
         </div>

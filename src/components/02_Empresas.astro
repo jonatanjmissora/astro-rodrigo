@@ -1,105 +1,37 @@
 ---
-const trabajos = [
-  {
-    alt: "Punto Alem eventos",
-    title: "Punto_Alem_eventos",
-    src: "/assets/trabajos/punto_alem.svg",
-    href: "alem01",
-  },
-  {
-    alt: "Hotel Orion",
-    title: "Hotel_Orion",
-    src: "/assets/trabajos/hotel_orion.svg",
-    href: "orion01",
-  },
-  {
-    alt: "Moto Manía",
-    title: "Moto_Mania",
-    src: "/assets/trabajos/moto_mania.svg",
-    href: "moto01",
-  },
-  {
-    alt: "Dexter",
-    title: "Dexter",
-    src: "/assets/trabajos/dexter.svg",
-    href: "dexter01",
-  },
-  {
-    alt: "Top5",
-    title: "Top5",
-    src: "/assets/trabajos/top5.svg",
-    href: "top501",
-  },
-  {
-    alt: "Top6",
-    title: "Top6",
-    src: "/assets/trabajos/top6.svg",
-    href: "top601",
-  },
-  {
-    alt: "Casali",
-    title: "Casali",
-    src: "/assets/trabajos/casali.svg",
-    href: "casali00",
-  },
-  {
-    alt: "Bahia_Confort",
-    title: "Bahia Confort",
-    src: "/assets/trabajos/bahia_confort.svg",
-    href: "bahia01",
-  },
-  {
-    alt: "Varoba",
-    title: "Varoba",
-    src: "/assets/trabajos/varoba.svg",
-    href: "varoba01",
-  },
-  {
-    alt: "Alba Garcia",
-    title: "Alba_Garcia",
-    src: "/assets/trabajos/alba_garcia.svg",
-    href: "alba01",
-  },
-  {
-    alt: "IAGRO",
-    title: "IAGRO",
-    src: "/assets/trabajos/iagro.svg",
-    href: "iagro01",
-  },
-  {
-    alt: "Ragazzi",
-    title: "Ragazzi",
-    src: "/assets/trabajos/ragazzi.svg",
-    href: "ragazzi01",
-  },
-  {
-    alt: "Teknomania",
-    title: "Teknomania",
-    src: "/assets/trabajos/teknomania.svg",
-    href: "tekno01",
-  },
-  {
-    alt: "Atila",
-    title: "Atila",
-    src: "/assets/trabajos/atila.svg",
-    href: "atila01",
-  },
+import { trabajos } from "../trabajos";
+
+const empresas = [
+  "alem01",
+  "orion01",
+  "moto01",
+  "dexter01",
+  "top501",
+  "top601",
+  "casali00",
+  "bahia01",
+  "varoba01",
+  "alba01",
+  "iagro01",
+  "ragazzi01",
+  "tekno01",
+  "atila01",
 ];
 ---
 
 <section class="mt-36 w-full">
-  <h2 class="text-3xl w-full py-4 my-8 border-b-2 border-black font-extrabold">
+  <h2 class="text-3xl w-full py-4 my-8 border-b border-gray-500 font-extrabold">
     Empresas
   </h2>
-  <div class="grid grid-cols-5 gap-6 justify-items-center">
+  <div class="grid grid-cols-4 sm:grid-cols-5 gap-6 justify-items-center">
     {
-      trabajos.map((trabajo) => (
-        <a href={`#${trabajo.href}`}>
+      empresas.map((id) => (
+        <a href={`#${id}`}>
           <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-500">
             <img
               class="w-full h-full object-cover"
-              src={trabajo.src}
-              alt={trabajo.alt}
+              src={trabajos[id].logo}
+              alt={`imagen o logo de ${id}`}
               loading="lazy"
               decoding="async"
             />

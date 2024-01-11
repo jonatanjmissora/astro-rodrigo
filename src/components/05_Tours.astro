@@ -1,7 +1,4 @@
 ---
-import { tourCategorias } from "../trabajos";
-import Tour from "./Tour.astro";
-
 const cards = [
   {
     title: "Fácil implementación",
@@ -22,11 +19,15 @@ const cards = [
 ];
 ---
 
-<section id="tours" class="w-[75vw] mx-auto mt-20">
+<section id="tours" class="w-full mt-40">
   <article>
-    <h2 class="text-3xl font-semibold">¿Qué es un Tour Virtual 360°?</h2>
+    <h2 class="text-[1.6rem] sm:text-3xl font-semibold">
+      ¿Qué es un Tour Virtual 360°?
+    </h2>
 
-    <p class="mt-8 text-xl font-regular leading-relaxed text-pretty">
+    <p
+      class="mt-8 text-xl font-regular leading-relaxed text-pretty px-4 sm:px-0"
+    >
       Empezaremos explicando, de la forma más fácil, que es un tour virtual de
       360 grados. Un tour virtual es una herramienta digital e interactiva que
       agrupa un conjunto de fotos de 360 grados y que atráves de estas se genera
@@ -41,7 +42,7 @@ const cards = [
       todos los dispositivos que hoy en día usamos.
     </p>
 
-    <div class="grid grid-cols-4 gap-4 mt-16">
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-16">
       {
         cards.map((card) => (
           <div class="bg-blue-500 rounded-xl my-shadow-outline">
@@ -58,6 +59,4 @@ const cards = [
       }
     </div>
   </article>
-
-  {tourCategorias.map((categoria) => <Tour categoria={categoria} />)}
 </section>
