@@ -11,6 +11,8 @@ export function ReactGaleria({id}) {
 
   return (
     <article id="article" className="w-full h-screen sm:h-[90%]">
+
+      {/*       HEADER       */}
       <div className="w-full flex items-center gap-[30%] border-b border-gray-500 mb-4 ">
         <a className="flex items-center gap-4 p-0 my-6 sm:m-0" href={`/#${id}`}>
           <ReactChevronLeft className="w-8 h-8"/>
@@ -21,33 +23,44 @@ export function ReactGaleria({id}) {
 
       <div className="h-[92%] mx-auto sm:flex justify-between">
         
+        {/*     IMAGEN PRINCIPAL    */}
         <picture className="w-full sm:w-[78%] sm:flex justify-center relative overflow-hidden hidden">
-          <div className="absolute -top-4 right-4 z-10 card-icon icon-right">
+          <div className="absolute top-0 right-0 z-10 px-4 card">
+            <div>
+
+            <p class="text-xl font-semibold text-center pt-4">Vista</p>
             <div className="spinner">
-              <a href={`/tour/${id}`}>
+              <a href={`/tour/${id}`} class="p-0 m-0">
                 <ReactTourSvg className="w-20 h-16 p-1 hover:text-my-primary" />
               </a>
             </div>
+            </div>
           </div>
-          <img src={trabajos[id].galeria[mainIndex]} alt={trabajos[id].galeria[mainIndex]} className="w-full sm:h-full relative"/>
+          <img src={trabajos[id].galeria[mainIndex]} alt={trabajos[id].galeria[mainIndex]} className="h-full relative"/>
         </picture>
 
-        <aside className="w-full sm:w-[20%] h-full flex flex-col gap-2 overflow-hidden overflow-y-auto relative">
-        <div className={`absolute -top-4 right-4 z-10 card-icon icon-right ${isDesktop && `hidden`}`}>
-            <div className="spinner">
-              <a href={`/tour/${id}`}>
-                <ReactTourSvg className="w-20 h-16 p-1 hover:text-my-primary" />
-              </a>
-            </div>
-          </div>
+        {/*       ASIDE FOTOS      */}
+        <aside className="w-full sm:w-[20%] h-full flex flex-col gap-4 overflow-hidden overflow-y-auto relative">
+        
           {trabajos[id].galeria.map((foto, index) => 
+          <div>
+
             <img 
               key={index}
               onClick={() => setMainIndex(index)}
-              className={`w-[97%] sm:h-[200px] mx-auto object-cover object-center cursor-pointer ${index === mainIndex && isDesktop && `outline outline-4 outline-my-primary` }`} 
+              className={`w-[100%] sm:h-[200px] mx-auto object-cover object-center cursor-pointer ${index === mainIndex && isDesktop && `outline outline-4 outline-my-primary` }`} 
               src={foto} 
               alt={foto}
               />
+              {!isDesktop && <a href={`/tour/${id}`} class="flex justify-center items-center gap-4 label">
+                <span class="text-2xl font-semibold">Click aqui para ver en</span>
+                <div className={isDesktop && `hidden`}>
+                  <div className="spinner">
+                      <ReactTourSvg className="w-20 h-16 p-1 " />
+                  </div>
+                </div>
+              </a>}
+              </div>
               )}
         </aside>
       </div>

@@ -21,24 +21,60 @@ import ContactPill from "../components/ContactPill.astro";
       </picture>
       <!-- LADO DERECHO -->
       <div
-        id="contact"
-        class="w-full sm:w-1/2 sm:h-full flex flex-col justify-between gap-4 sm:gap-0"
+        class="w-full sm:w-1/2 sm:h-full flex flex-col justify-between items-center gap-4 sm:gap-0"
       >
         <!-- FRASE -->
-        <p class="font-medium leading-relaxed text-2xl p-12 pb-4 sm:px-16">
+        <p
+          id="contact"
+          class="font-medium leading-relaxed text-2xl px-8 pt-16 pb-4 sm:p-0 sm:px-12 text-pretty"
+        >
           "Me fascina mi trabajo e intento transmitir esta pasión en cada uno de
           los proyectos que realizo"
         </p>
 
         <!-- IMAGEN -->
-        <div class="w-1/3 mx-auto my-8">
-          <img
-            class="w-full h-full object-cover"
-            src="/assets/contact2.webp"
-            alt="contact 2 image"
-            loading="lazy"
-            decoding="async"
-          />
+        <div class="h-[200px] sm:h-1/2 my-8 flex justify-center gap-8 sm:gap-4">
+          <picture class="">
+            <img
+              class="w-full h-full object-cover"
+              src="/assets/contact2.webp"
+              alt="contact 2 image"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+
+          <div class="flex flex-col justify-center items-center gap-8">
+            <a
+              title="facebook"
+              target="_blank"
+              href="https://www.facebook.com/rodrigomose"
+            >
+              <FacebookSvg
+                class="size-16 sm:size-10 text-[#555] hover:text-my-primary hover:scale-110 transition-transform"
+              />
+            </a>
+
+            <a
+              title="instagram"
+              target="_blank"
+              href="https://www.instagram.com/rodrigomphotos/"
+            >
+              <InstagramSvg
+                class="size-16 sm:size-11 text-[#555] hover:text-my-primary hover:scale-110 transition-transform"
+              />
+            </a>
+
+            <a
+              title="whatsapp"
+              target="_blank"
+              href="https://wa.me/+5492915046309"
+            >
+              <WhatsappSvg
+                class="size-[3.5rem] sm:size-10 text-[#555] hover:text-my-primary hover:scale-110 transition-transform"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="flex justify-center gap-12">
@@ -49,9 +85,9 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <PhoneSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-my-body rounded-full p-1 bg-my-black"
+                class="absolute -left-8 -top-[0.35rem] h-9 w-9 border-2 border-my-body rounded-full p-1 bg-[#444]"
               />
-              291-5046309
+              <span class="py-1 text-lg sm:text-base">291-5046309</span>
             </ContactPill>
           </a>
 
@@ -62,9 +98,9 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <PhoneSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
+                class="absolute -left-8 -top-[0.35rem] h-9 w-9 border-2 border-my-white rounded-full p-1 bg-[#444]"
               />
-              291-4319025
+              <span class="py-1 text-lg sm:text-base">291-4319025</span>
             </ContactPill>
           </a>
         </div>
@@ -78,9 +114,9 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <MailSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
+                class="absolute -left-8 -top-[0.25rem] h-9 w-9 border-2 border-my-white rounded-full p-1 bg-[#444]"
               />
-              rodrigomm.81@gmail.com
+              <span class="py-1 text-lg">rodrigomm.81@gmail.com</span>
             </ContactPill>
           </a>
 
@@ -92,42 +128,10 @@ import ContactPill from "../components/ContactPill.astro";
           >
             <ContactPill>
               <MailSvg
-                class="absolute -left-7 h-9 w-9 border-2 border-my-white rounded-full p-1 bg-my-black"
+                class="absolute -left-8 -top-[0.25rem] size-10 sm:size-9 border-2 border-my-white rounded-full p-1 bg-[#444]"
               />
-              rodrigomm.81@gmail.com
+              <span class="py-1 text-lg">rodrigomm.81@gmail.com</span>
             </ContactPill>
-          </a>
-        </div>
-
-        <div class="flex w-full justify-center items-center gap-8">
-          <a
-            title="facebook"
-            target="_blank"
-            href="https://www.facebook.com/rodrigomose"
-          >
-            <FacebookSvg
-              class="w-10 h-10 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
-            />
-          </a>
-
-          <a
-            title="instagram"
-            target="_blank"
-            href="https://www.instagram.com/rodrigomphotos/"
-          >
-            <InstagramSvg
-              class="w-11 h-11 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
-            />
-          </a>
-
-          <a
-            title="whatsapp"
-            target="_blank"
-            href="https://wa.me/+5492915046309"
-          >
-            <WhatsappSvg
-              class="w-10 h-10 text-my-black hover:text-my-primary hover:scale-110 transition-transform"
-            />
           </a>
         </div>
       </div>
