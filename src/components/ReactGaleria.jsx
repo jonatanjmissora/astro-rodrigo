@@ -13,12 +13,12 @@ export function ReactGaleria({id}) {
     <article id="article" className="w-full h-screen sm:h-[90%]">
 
       {/*       HEADER       */}
-      <div className="w-full flex items-center gap-[30%] border-b border-gray-500 mb-4 ">
+      <div className="w-full flex justify-between items-center sm:justify-start sm:gap-[30%] pr-4 border-b border-gray-500 mb-4 ">
         <a className="flex items-center gap-4 p-0 my-6 sm:m-0" href={`/#${id}`}>
           <ReactChevronLeft className="w-8 h-8"/>
-          <span className="font-semibold">Volver</span>
+          <span className="text-2xl font-semibold">Volver</span>
         </a>
-        <h2 className="text-xl font-bold">{trabajos[id].nombre}</h2>
+        <h2 className="text-2xl font-bold">{trabajos[id].nombre}</h2>
       </div>
 
       <div className="h-[92%] mx-auto sm:flex justify-between">
