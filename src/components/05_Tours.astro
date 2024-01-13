@@ -21,25 +21,35 @@ const cards = [
 
 <section id="tours" class="w-full mt-40">
   <article>
-    <h2 class="text-[1.6rem] sm:text-3xl font-semibold">
+    <h2 class="text-4xl sm:text-3xl leading-normal font-semibold text-pretty">
       ¿Qué es un Tour Virtual 360°?
     </h2>
 
     <p
-      class="mt-8 text-xl font-regular leading-relaxed text-pretty px-4 sm:px-0"
+      class="mt-8 text-2xl font-regular leading-relaxed text-pretty px-4 sm:px-0"
     >
       Empezaremos explicando, de la forma más fácil, que es un tour virtual de
-      360 grados. Un tour virtual es una herramienta digital e interactiva que
-      agrupa un conjunto de fotos de 360 grados y que atráves de estas se genera
-      un recorrido para mostrar espacios espefícios o de interés, por ejemplo
-      los distintos espacios dentro de un restaurante o un bar, el salón de un
-      auto y las diversas vistas de este o una habitación de hotel con todos los
-      beneficios que puede brindar. Además, que al ser una herramienta digital,
-      el tour virtual se puede visualizar en diversos dispositivos como un
-      smartphone, una tableta, una computadora convencional de escritorio, una
-      laptop o portatil o, para una opción más inmersiva, con lentes de realidad
-      virtual, esto hace que esta tecnología esté al alcance de todos y en casi
-      todos los dispositivos que hoy en día usamos.
+      360 grados.
+    </p>
+    <p
+      class="mt-8 text-2xl font-regular leading-relaxed text-pretty px-4 sm:px-0"
+    >
+      Un tour virtual es una herramienta digital e interactiva que agrupa un
+      conjunto de fotos de 360 grados y que atráves de estas se genera un
+      recorrido para mostrar espacios espefícios o de interés, por ejemplo los
+      distintos espacios dentro de un restaurante o un bar, el salón de un auto
+      y las diversas vistas de este o una habitación de hotel con todos los
+      beneficios que puede brindar.
+    </p>
+    <p
+      class="mt-8 text-2xl font-regular leading-relaxed text-pretty px-4 sm:px-0"
+    >
+      Además, que al ser una herramienta digital, el tour virtual se puede
+      visualizar en diversos dispositivos como un smartphone, una tableta, una
+      computadora convencional de escritorio, una laptop o portatil o, para una
+      opción más inmersiva, con lentes de realidad virtual, esto hace que esta
+      tecnología esté al alcance de todos y en casi todos los dispositivos que
+      hoy en día usamos.
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-16">
@@ -47,11 +57,11 @@ const cards = [
         cards.map((card) => (
           <div class="bg-blue-500 rounded-xl my-shadow-outline">
             <div class="h-24 border-b flex justify-center items-center">
-              <h3 class="text-xl font-semibold text-white py-4 px-4 text-center">
+              <h3 class="text-3xl sm:text-2xl font-semibold text-white py-4 px-4 text-center">
                 {card.title}
               </h3>
             </div>
-            <p class="font-medium text-white leading-relaxed py-6 px-4">
+            <p class="text-xl font-medium text-white leading-relaxed py-6 px-4">
               {card.text}
             </p>
           </div>

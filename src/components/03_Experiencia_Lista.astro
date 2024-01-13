@@ -3,10 +3,12 @@ const { array, title } = Astro.props;
 ---
 
 <section class="sm:w-1/2 my-20 sm:my-0">
-  <h3 class="py-4 my-4 mr-6 font-semibold text-3xl border-b border-gray-500">
+  <h3
+    class="py-4 my-4 mr-6 font-semibold text-4xl sm:text-3xl border-b border-gray-500"
+  >
     {title}
   </h3>
-  <ul class="ml-4">
+  <ul class="ml-8">
     {
       array.map((element) => (
         <li class="font-medium text-[1.5rem] list-disc my-2 ml-5 px-2 text-gray-600">

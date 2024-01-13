@@ -3,9 +3,9 @@ import Cancel from "./icons/Cancel.astro";
 ---
 
 <header
-  class="px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-[3.5rem] bg-my-body z-40"
+  class="px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40"
 >
-  <picture class="h-8">
+  <picture class="h-10 sm:h-8">
     <img
       class="h-full w-full object-cover"
       src="/assets/firmablack.webp"
@@ -15,7 +15,7 @@ import Cancel from "./icons/Cancel.astro";
     />
   </picture>
   <a href="/#tours">
-    <Cancel class="w-8 h-8 cursor-pointer" />
+    <Cancel class="size-10 sm:size-8 cursor-pointer" />
   </a>
 </header>
 

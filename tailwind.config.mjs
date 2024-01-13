@@ -11,6 +11,10 @@ export default {
 				"my-primary": "rgb(59, 130, 246)",
 				"my-hover": "rgb(16, 16, 148)",
 			},
+			spacing: {
+				"header-desktop": "3.5rem",
+				"header-movil": "4.5rem",
+			}
 		},
 	},
 	plugins: [],

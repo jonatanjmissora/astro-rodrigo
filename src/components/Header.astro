@@ -20,7 +20,7 @@ const header = {
 ---
 
 <header
-  class="px-4 sm:px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-[3.5rem] bg-my-body z-40"
+  class="px-4 sm:px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40"
 >
   <a
     href="/"
@@ -28,7 +28,7 @@ const header = {
   >
     {
       header.logoImg && (
-        <picture class="h-8">
+        <picture class="h-10 sm:h-8">
           <img
             class="h-full w-full object-cover"
             src={header.logoImg}
@@ -41,7 +41,7 @@ const header = {
     }
     {header.logoText && <span class="pt-[3px]">{header.logoText}</span>}
   </a>
-  <nav class="flex gap-4 text-lg font-semibold">
+  <nav class="flex gap-4 text-xl sm:text-lg font-semibold">
     {
       header.links.map((link) => (
         <a class="hover:text-my-primary" href={link.route}>
