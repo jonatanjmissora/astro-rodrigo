@@ -29,9 +29,9 @@ const empresas = [
     {
       empresas.map((id) => (
         <a href={`#${id}`}>
-          <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer hover:scale-110 transition-transform duration-500">
+          <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
             <img
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               src={trabajos[id].logo}
               alt={`imagen o logo de ${id}`}
               loading="lazy"
@@ -43,5 +43,3 @@ const empresas = [
     }
   </div>
 </section>
-
-<style></style>
