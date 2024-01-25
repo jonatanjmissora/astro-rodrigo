@@ -25,7 +25,7 @@ export function ReactGaleria({id}) {
         
         {/*     IMAGEN PRINCIPAL    */}
         <picture className="w-full sm:w-[78%] sm:flex justify-center relative overflow-hidden hidden">
-          <div className="absolute top-0 right-0 z-10 px-4 card">
+          <div className="absolute -top-2 -right-2 z-10 px-4 card">
             <div>
 
             <p class="text-xl font-semibold text-center pt-4">Vista</p>
@@ -36,11 +36,11 @@ export function ReactGaleria({id}) {
             </div>
             </div>
           </div>
-          <img src={trabajos[id].galeria[mainIndex]} alt={trabajos[id].galeria[mainIndex]} className="h-full relative"/>
+          <img src={trabajos[id].galeria[mainIndex]} alt={trabajos[id].galeria[mainIndex]} className="h-full relative rounded-xl"/>
         </picture>
 
         {/*       ASIDE FOTOS      */}
-        <aside className="w-full sm:w-[20%] h-full flex flex-col gap-4 overflow-hidden overflow-y-auto relative">
+        <aside className="w-full sm:w-[22%] sm:px-2 sm:pt-2 h-full flex flex-col gap-4 overflow-hidden overflow-y-auto relative">
         
           {trabajos[id].galeria.map((foto, index) => 
           <div>
@@ -48,7 +48,7 @@ export function ReactGaleria({id}) {
             <img 
               key={index}
               onClick={() => setMainIndex(index)}
-              className={`w-[100%] sm:h-[200px] mx-auto object-cover object-center cursor-pointer ${index === mainIndex && isDesktop && `outline outline-4 outline-my-primary` }`} 
+              className={`w-[100%] sm:h-[200px] mx-auto object-cover object-center cursor-pointer rounded-xl ${index === mainIndex && isDesktop && `my-shadow-selected` }`} 
               src={foto} 
               alt={foto}
               />
