@@ -1,6 +1,6 @@
 ---
 const header = {
-  logoImg: "/assets/firmablack.webp",
+  logoImg: "/assets/logo.svg",
   logoText: "",
   links: [
     {
@@ -8,8 +8,8 @@ const header = {
       route: "/#gallery",
     },
     {
-      text: "Tours",
-      route: "/#tours",
+      text: "Tour",
+      route: "/tourInfo",
     },
     {
       text: "Contacto",
@@ -17,31 +17,31 @@ const header = {
     },
   ],
 };
+
+// " animate-fade-down animate-once animate-duration-[1000ms] animate-ease-out animate-delay-[750ms]"
 ---
 
 <header
-  class="px-4 sm:px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40 animate-fade-down animate-once animate-duration-[1000ms] animate-ease-out animate-delay-[750ms]"
+  class="px-6 sm:px-16 py-3 flex justify-between items-center fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40 shadow-my-shadow"
 >
   <a
     href="/"
-    class="flex justify-center itmes-center gap-4 hover:bg-my-primary"
+    class="flex justify-center itmes-center gap-4 rounded-lg hover:bg-my-primary"
   >
     {
       header.logoImg && (
-        <picture class="h-10 sm:h-8">
-          <img
-            class="h-full w-full object-cover"
-            src={header.logoImg}
-            alt="firma empresa"
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
+        <img
+          class="h-12 sm:h-10 object-cover"
+          src={header.logoImg}
+          alt="firma empresa"
+          loading="eager"
+          decoding="async"
+        />
       )
     }
     {header.logoText && <span class="pt-[3px]">{header.logoText}</span>}
   </a>
-  <nav class="flex gap-4 text-xl sm:text-lg font-semibold">
+  <nav class="flex gap-12 text-xl font-semibold">
     {
       header.links.map((link) => (
         <a class="hover:text-my-primary" href={link.route}>
@@ -53,9 +53,6 @@ const header = {
 </header>
 
 <style>
-  .shadow {
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
   .link-active {
     text-shadow: 0 0 5px #55afbb;
   }

@@ -20,9 +20,20 @@ export const trabajos: iTrabajos = {
   "orion01": {
     nombre: "Hotel Orion",
     categoria: "Apart Hotel",
-    portada: "/assets/logos/hotel_orion.svg",
+    portada: "/assets/gallery/orion1/orion0.webp",
     logo: "./assets/logos/hotel_orion.svg",
-    galeria: [],
+    galeria: [
+      "/assets/gallery/orion1/orion0.webp",
+      "/assets/gallery/orion1/orion1.webp",
+      "/assets/gallery/orion1/orion2.webp",
+      "/assets/gallery/orion1/orion3.webp",
+      "/assets/gallery/orion1/orion4.webp",
+      "/assets/gallery/orion1/orion5.webp",
+      "/assets/gallery/orion1/orion6.webp",
+      "/assets/gallery/orion1/orion7.webp",
+      "/assets/gallery/orion1/orion8.webp",
+      "/assets/gallery/orion1/orion9.webp",
+    ],
     tour: "https://www.keepeyeonball.com/Tour/7c4bc1e6-ae3d-449d-8da8-f86cbae58a42"
   },
   "alem01": {
@@ -68,7 +79,7 @@ export const trabajos: iTrabajos = {
   "casali01": {
     nombre: "Casali Prop",
     categoria: "Propiedades",
-    portada: "/assets/gallery/casali1/casaliprop2.webp",
+    portada: "/assets/gallery/casali1/casaliprop1.webp",
     logo: "./assets/logos/casali.svg",
     galeria: [
       "/assets/gallery/casali1/casaliprop1.webp",
@@ -79,7 +90,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali1/casaliprop6.webp",
       "/assets/gallery/casali1/casaliprop7.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/d5dc8dcf-cf4d-4bbf-99d1-c4f72b2dd875/4K?sc=4",
+    tour: "https://www.keepeyeonball.com/Tour/d5dc8dcf-cf4d-4bbf-99d1-c4f72b2dd875",
   },
   "casali02": {
     nombre: "Casali Prop",
@@ -100,7 +111,7 @@ export const trabajos: iTrabajos = {
   "casali03": {
     nombre: "Casali Prop",
     categoria: "Propiedades",
-    portada: "/assets/gallery/casali3/casaliprop05.webp",
+    portada: "/assets/gallery/casali3/casaliprop11.webp",
     logo: "./assets/logos/casali.svg",
     galeria: [
       "/assets/gallery/casali3/casaliprop01.webp",
@@ -157,11 +168,54 @@ export const trabajos: iTrabajos = {
     ],
     tour: "https://www.keepeyeonball.com/Tour/deaabb51-4c18-4a43-acf3-3c4e52a06201",
   },
+  "casali06": {
+    nombre: "Casali Prop",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali6/casaliprop03.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali6/casaliprop01.webp",
+      "/assets/gallery/casali6/casaliprop02.webp",
+      "/assets/gallery/casali6/casaliprop03.webp",
+      "/assets/gallery/casali6/casaliprop04.webp",
+      "/assets/gallery/casali6/casaliprop05.webp",
+      "/assets/gallery/casali6/casaliprop06.webp",
+      "/assets/gallery/casali6/casaliprop07.webp",
+      "/assets/gallery/casali6/casaliprop08.webp",
+      "/assets/gallery/casali6/casaliprop09.webp",
+      "/assets/gallery/casali6/casaliprop10.webp",
+      "/assets/gallery/casali6/casaliprop11.webp",
+      "/assets/gallery/casali6/casaliprop12.webp",
+      "/assets/gallery/casali6/casaliprop13.webp",
+    ],
+    tour: "https://kuula.co/share/collection/7cpLQ?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.49&thumbs=1&alpha=0.60&inst=es",
+  },
+  "casali07": {
+    nombre: "Casali Prop",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali7/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali7/casaliprop01.webp",
+      "/assets/gallery/casali7/casaliprop02.webp",
+      "/assets/gallery/casali7/casaliprop03.webp",
+      "/assets/gallery/casali7/casaliprop04.webp",
+      "/assets/gallery/casali7/casaliprop05.webp",
+      "/assets/gallery/casali7/casaliprop06.webp",
+      "/assets/gallery/casali7/casaliprop07.webp",
+      "/assets/gallery/casali7/casaliprop08.webp",
+      "/assets/gallery/casali7/casaliprop09.webp",
+      "/assets/gallery/casali7/casaliprop10.webp",
+      "/assets/gallery/casali7/casaliprop11.webp",
+    ],
+    tour: "https://kuula.co/share/collection/7JZxx?logo=1&info=1&fs=0&vr=0&zoom=1&gyro=0&autorotate=0.39&autop=10&thumbs=1&alpha=0.60&inst=es",
+  },
+
 
   "iagro01": {
     nombre: "I.A.G.R.O Inmobiliaria",
     categoria: "Comercios",
-    portada: "/assets/gallery/IAGRO/iagro1.webp",
+    portada: "./assets/logos/iagro.svg",
     logo: "./assets/logos/iagro.svg",
     galeria: [
       "/assets/gallery/IAGRO/iagro1.webp",
@@ -176,14 +230,18 @@ export const trabajos: iTrabajos = {
     portada: "/assets/gallery/Minimalismo/minimal1.webp",
     logo: "",
     galeria: [
-      "/assets/gallery/Minimalismo/minimal1.webp",
-      "/assets/gallery/Minimalismo/minimal2.webp",
-      "/assets/gallery/Minimalismo/minimal3.webp",
-      "/assets/gallery/Minimalismo/minimal4.webp",
-      "/assets/gallery/Minimalismo/minimal5.webp",
-      "/assets/gallery/Minimalismo/minimal6.webp",
-      "/assets/gallery/Minimalismo/minimal7.webp",
-      "/assets/gallery/Minimalismo/minimal8.webp",
+      "/assets/gallery/Minimalismo/minimal01.webp",
+      "/assets/gallery/Minimalismo/minimal02.webp",
+      "/assets/gallery/Minimalismo/minimal03.webp",
+      "/assets/gallery/Minimalismo/minimal04.webp",
+      "/assets/gallery/Minimalismo/minimal05.webp",
+      "/assets/gallery/Minimalismo/minimal06.webp",
+      "/assets/gallery/Minimalismo/minimal07.webp",
+      "/assets/gallery/Minimalismo/minimal08.webp",
+      "/assets/gallery/Minimalismo/minimal09.webp",
+      "/assets/gallery/Minimalismo/minimal10.webp",
+      "/assets/gallery/Minimalismo/minimal11.webp",
+      "/assets/gallery/Minimalismo/minimal12.webp",
     ],
     tour: "",
   },
@@ -253,7 +311,7 @@ export const categorias = [
   },
   {
     nombre: "Propiedades",
-    coleccion: ["casali00", "casali01", "casali02", "casali03", "casali04", "casali05"]
+    coleccion: ["casali06", "casali00", "casali01", "casali02", "casali03", "casali04", "casali07", "casali05"]
   },
   {
     nombre: "Salones",
@@ -261,6 +319,6 @@ export const categorias = [
   },
   {
     nombre: "Comercios",
-    coleccion: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01"]
+    coleccion: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01", "iagro01"]
   }
 ]

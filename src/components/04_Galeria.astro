@@ -14,7 +14,7 @@ import TourSvg from "./icons/TourSvg.astro";
         <div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
           {categoria.coleccion.map((galeria) => (
             <a
-              class="p-0 my-shadow-outline"
+              class="p-0 my-shadow-outline rounded-lg"
               href={
                 trabajos[galeria].galeria.length > 0
                   ? `/galeria/${galeria}`
@@ -30,6 +30,8 @@ import TourSvg from "./icons/TourSvg.astro";
                   class="w-full aspect-square object-cover object-center"
                   src={trabajos[galeria].portada}
                   alt={`imagen de ${trabajos[galeria].portada}`}
+                  loading="lazy"
+                  decoding="async"
                 />
                 {trabajos[galeria].galeria.length > 0 && (
                   <div class="absolute bottom-0 right-0 z-10 card-icon icon-right ">

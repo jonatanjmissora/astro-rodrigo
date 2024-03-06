@@ -1,4 +1,5 @@
 ---
+import RevealLeft from "./animation/RevealLeft.astro";
 const { array, title } = Astro.props;
 ---
 
@@ -11,7 +12,7 @@ const { array, title } = Astro.props;
   <ul class="ml-8">
     {
       array.map((element) => (
-        <li class="font-medium text-[1.5rem] list-disc my-2 ml-5 px-2 text-gray-600">
+        <li class="font-medium text-[1.5rem] list-disc my-2 pl-4 text-gray-600">
           {element}
         </li>
       ))

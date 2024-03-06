@@ -1,99 +1,97 @@
 ---
 import { trabajos } from "../../trabajos";
-import Cancel from "../../components/icons/Cancel.astro";
-import TourLayout from "../../layouts/TourLayout.astro";
+import GalTourLayout from "../../layouts/GalTourLayout.astro";
+import HeaderTour from "../../components/HeaderTour.astro";
 export function getStaticPaths() {
-  return [
-    { params: { id: "bahia01" } },
-    { params: { id: "orion01" } },
+  const idsWithTour = Object.entries(trabajos)
+    .map(([id, data]) => (data.tour !== "" ? id : null))
+    .filter((id) => id !== null);
 
-    { params: { id: "alem01" } },
-    { params: { id: "top501" } },
-    { params: { id: "top601" } },
+  const paramsIds = idsWithTour.map((id) => {
+    return { params: { id } };
+  });
 
-    { params: { id: "casali00" } },
-    { params: { id: "casali01" } },
-    { params: { id: "casali02" } },
-    { params: { id: "casali03" } },
-    { params: { id: "casali04" } },
-    { params: { id: "casali05" } },
-
-    { params: { id: "moto01" } },
-    { params: { id: "dexter01" } },
-    { params: { id: "varoba01" } },
-    { params: { id: "ragazzi01" } },
-    { params: { id: "tekno01" } },
-    { params: { id: "alba01" } },
-    { params: { id: "atila01" } },
-  ];
+  return paramsIds;
 }
 
 const { id } = Astro.params;
 ---
 
-<TourLayout title="RM | Tour">
+<GalTourLayout title="RM | Tour">
+  <HeaderTour
+    id={id}
+    nombre={trabajos[id].nombre}
+    logoSrc={trabajos[id].logo}
+  />
   <section class="h-screen w-full relative bg-black">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <span class="tour-loader"></span>
       <span class="text-3xl font-bold text-white">Cargando</span>
     </div>
-    <iframe class="w-full h-full relative z-10" src={trabajos[id].tour}
+    <iframe class="w-full h-[90%] relative z-10" src={trabajos[id].tour}
     ></iframe>
   </section>
-</TourLayout>
 
-<style>
-  .tour-loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -7.5rem;
-    /* Negative half of height. */
-    margin-left: -7.5rem;
-    /* Negative half of width. */
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    animation: spin 1s linear forwards;
-    animation-iteration-count: 6;
-  }
-
-  .tour-loader::before {
-    content: "";
-    color: yellow;
-    box-sizing: border-box;
-    position: absolute;
-    inset: 0px;
-    border-radius: 50%;
-    border: 10px solid #eee;
-    animation: prixClipFix 2s linear forwards;
-    animation-iteration-count: 3;
-  }
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes prixClipFix {
-    0% {
-      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  <style>
+    .tour-loader {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -7.5rem;
+      /* Negative half of height. */
+      margin-left: -7.5rem;
+      /* Negative half of width. */
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      animation: spin 1s linear forwards;
+      animation-iteration-count: 6;
     }
 
-    25% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    .tour-loader::before {
+      content: "";
+      color: yellow;
+      box-sizing: border-box;
+      position: absolute;
+      inset: 0px;
+      border-radius: 50%;
+      border: 10px solid #eee;
+      animation: prixClipFix 2s linear forwards;
+      animation-iteration-count: 3;
+    }
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
-    50% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
-    }
+    @keyframes prixClipFix {
+      0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+      }
 
-    75% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
-    }
+      25% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+      }
 
-    100% {
-      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+      50% {
+        clip-path: polygon(
+          50% 50%,
+          0 0,
+          100% 0,
+          100% 100%,
+          100% 100%,
+          100% 100%
+        );
+      }
+
+      75% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+      }
+
+      100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+      }
     }
-  }
-</style>
+  </style>
+</GalTourLayout>

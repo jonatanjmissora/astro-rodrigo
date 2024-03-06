@@ -7,7 +7,7 @@ import WhatsappSvg from "../components/icons/WhatsappSvg.astro";
 import ContactPill from "../components/ContactPill.astro";
 ---
 
-<section class="w-full my-40 sm:mt-[30vh] flex justify-center">
+<section class="w-full mt-4 mb-40 sm:mt-[30vh] flex justify-center">
   <div>
     <div class="sm:flex justify-center items-center sm:h-[70vh]">
       <picture class="sm:h-full sm:w-1/2">
@@ -44,6 +44,7 @@ import ContactPill from "../components/ContactPill.astro";
             />
           </picture>
 
+          <!-- SOCIALS -->
           <div class="flex flex-col justify-center items-center gap-8">
             <a
               title="facebook"
@@ -77,18 +78,26 @@ import ContactPill from "../components/ContactPill.astro";
           </div>
         </div>
 
-        <div class="sm:flex justify-center gap-12">
+        <!-- PHONES -->
+        <div
+          class="w-full flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-16"
+        >
           <a
             title="whatsapp"
             target="_blank"
             href="https://wa.me/+5492915046309"
           >
-            <ContactPill>
+            <div
+              class="relative text-lg text-my-white hover:text-my-primary hover:scale-105 transition-transform"
+            >
               <PhoneSvg
-                class="absolute -left-6 -top-[0.15rem] size-11 sm:size-10 border-2 border-my-body rounded-full p-1 bg-[#444]"
+                class="absolute -left-6 -top-[0.6rem] size-11 sm:size-10 border-2 border-my-body rounded-full p-1 bg-[#444]"
               />
-              <span class="text-2xl sm:text-lg">291-5046309</span>
-            </ContactPill>
+              <span
+                class="text-xl sm:text-lg text-my-white bg-[#444] pr-4 pl-6 pb-1 pt-2 rounded-xl hover:text-my-primary transition-colors"
+                >291-5046309</span
+              >
+            </div>
           </a>
 
           <a
@@ -96,42 +105,59 @@ import ContactPill from "../components/ContactPill.astro";
             target="_blank"
             href="https://wa.me/+5492914319025"
           >
-            <ContactPill>
+            <div
+              class="relative text-lg text-my-white hover:text-my-primary hover:scale-105 transition-transform"
+            >
               <PhoneSvg
-                class="absolute -left-6 -top-[0.15rem] size-11 sm:size-10 border-2 border-my-white rounded-full p-1 bg-[#444]"
+                class="absolute -left-6 -top-[0.6rem] size-11 sm:size-10 border-2 border-my-body rounded-full p-1 bg-[#444]"
               />
-              <span class="text-2xl sm:text-lg">291-4319025</span>
-            </ContactPill>
+              <span
+                class="text-xl sm:text-lg text-my-white bg-[#444] pr-4 pl-6 pb-1 pt-2 rounded-xl hover:text-my-primary transition-colors"
+                >291-4319025</span
+              >
+            </div>
           </a>
         </div>
 
-        <div class="flex justify-center gap-12 py-4">
+        <!-- DESK MAIL -->
+        <div class="w-full justify-center hidden sm:flex">
           <a
-            class="hidden sm:block"
             href="https://mail.google.com/mail/u/0/?fs=1&to=rodrigomm.81@gmail.com&su=&body=&bcc=&tf=cm"
             title="mail_de_la_empresa"
             target="_blank"
           >
-            <ContactPill>
+            <div
+              class="relative text-lg text-my-white hover:text-my-primary hover:scale-105 transition-transform"
+            >
               <MailSvg
-                class="absolute -left-6 -top-[0.15rem] size-11 sm:size-10 border-2 border-my-white rounded-full p-1 bg-[#444]"
+                class="absolute -left-6 -top-[0.4rem] size-11 sm:size-10 border-2 border-my-body rounded-full p-1 bg-[#444]"
               />
-              <span class="text-2xl sm:text-lg">rodrigomm.81@gmail.com</span>
-            </ContactPill>
+              <span
+                class="text-my-white bg-[#444] pr-4 pl-6 py-2 rounded-xl hover:text-my-primary transition-colors"
+                >rodrigomm.81@gmail.com</span
+              >
+            </div>
           </a>
+        </div>
 
+        <!-- MOVIL MAIL -->
+        <div class="w-full flex justify-center mt-8 sm:hidden">
           <a
-            class="sm:hidden"
             href="mailto:rodrigomm.81@gmail.com"
             title="mail_de_la_empresa"
             target="_blank"
           >
-            <ContactPill>
+            <div
+              class="relative text-lg text-my-white hover:text-my-primary hover:scale-105 transition-transform"
+            >
               <MailSvg
-                class="absolute -left-6 -top-[0.15rem] size-11 sm:size-10 border-2 border-my-white rounded-full p-1 bg-[#444]"
+                class="absolute -left-6 -top-[0.4rem] size-11 sm:size-10 border-2 border-my-body rounded-full p-1 bg-[#444]"
               />
-              <span class="text-2xl sm:text-lg">rodrigomm.81@gmail.com</span>
-            </ContactPill>
+              <span
+                class="text-2xl text-my-white bg-[#444] pr-4 pl-6 py-2 rounded-xl hover:text-my-primary transition-colors"
+                >rodrigomm.81@gmail.com</span
+              >
+            </div>
           </a>
         </div>
       </div>

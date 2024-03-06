@@ -10,6 +10,8 @@ export interface iTrabajos {
   casali03: iTrabajo;
   casali04: iTrabajo;
   casali05: iTrabajo;
+  casali06: iTrabajo;
+  casali07: iTrabajo;
   iagro01: iTrabajo;
   mini01: iTrabajo;
   moto01: iTrabajo;
@@ -19,6 +21,7 @@ export interface iTrabajos {
   tekno01: iTrabajo;
   alba01: iTrabajo;
   atila01: iTrabajo;
+
 }
 
 export interface iTrabajo {

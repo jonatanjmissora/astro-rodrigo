@@ -1,0 +1,34 @@
+---
+import "@fontsource/poppins";
+import "../styles/main.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Rodrigo Mose. Arquitectura & Minimalismo, Servicios Inmobiliarios, Tours Virtuales 360°, Obras. Renders. Diseño y Desarrollo Web."
+    />
+    <meta
+      name="keywords"
+      content="foto, fotografia, arquitectura, obra, inmobiliaria, minimalismo, tour virtual, tour 360, fine art"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="w-[95vw] sm:w-[75vw] mx-auto">
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,9 +1,10 @@
 ---
 import Cancel from "./icons/Cancel.astro";
+const { id, nombre, logoSrc } = Astro.props;
 ---
 
 <header
-  class="px-16 py-3 flex justify-between items-center shadow fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40"
+  class="px-6 sm:px-16 py-3 flex items-center shadow-my-shadow fixed top-0 left-0 w-full h-header-movil sm:h-header-desktop bg-my-body z-40"
 >
   <picture class="h-10 sm:h-8">
     <img
@@ -14,13 +15,27 @@ import Cancel from "./icons/Cancel.astro";
       decoding="async"
     />
   </picture>
-  <a href="/#tours">
-    <Cancel class="size-10 sm:size-8 cursor-pointer" />
+
+  <div
+    class="ml-auto pr-6 flex justify-between items-center gap-2 sm:gap-8 mt-1"
+  >
+    <h2 class="text-xl font-bold">{nombre}</h2>
+    {
+      logoSrc && (
+        <picture class="size-8">
+          <img
+            class="w-full h-full object-cover rounded"
+            src={logoSrc.substring(1)}
+            alt={`imagen o logo de `}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      )
+    }
+  </div>
+
+  <a href={`/#${id}`}>
+    <Cancel class="size-10 sm:size-8 cursor-pointer ml-2" />
   </a>
 </header>
-
-<style>
-  .shadow {
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-</style>

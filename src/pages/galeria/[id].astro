@@ -1,25 +1,24 @@
 ---
+import { trabajos } from "../../trabajos";
 import { ReactGaleria } from "../../components/ReactGaleria";
-import GaleriaLayout from "../../layouts/GaleriaLayout.astro";
+import GalTourLayout from "../../layouts/GalTourLayout.astro";
 export function getStaticPaths() {
-  return [
-    { params: { id: "bahia01" } },
-    { params: { id: "casali00" } },
-    { params: { id: "casali01" } },
-    { params: { id: "casali02" } },
-    { params: { id: "casali03" } },
-    { params: { id: "casali04" } },
-    { params: { id: "casali05" } },
-    { params: { id: "iagro01" } },
-    { params: { id: "mini01" } },
-  ];
+  const idsWithTour = Object.entries(trabajos)
+    .map(([id, data]) => (data.galeria.length !== 0 ? id : null))
+    .filter((id) => id !== null);
+
+  const paramsIds = idsWithTour.map((id) => {
+    return { params: { id } };
+  });
+
+  return paramsIds;
 }
 
 const { id } = Astro.params;
 ---
 
-<GaleriaLayout title="RM | Galeria">
+<GalTourLayout title="RM | Galeria">
   <section class="w-full h-screen mx-auto sm:flex items-center">
     <ReactGaleria client:only id={id} />
   </section>
-</GaleriaLayout>
+</GalTourLayout>

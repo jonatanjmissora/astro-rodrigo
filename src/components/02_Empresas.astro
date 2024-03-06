@@ -2,20 +2,20 @@
 import { trabajos } from "../trabajos";
 
 const empresas = [
-  "alem01",
-  "orion01",
-  "moto01",
-  "dexter01",
-  "top501",
-  "top601",
-  "casali00",
-  "bahia01",
-  "varoba01",
-  "alba01",
-  "iagro01",
-  "ragazzi01",
-  "tekno01",
-  "atila01",
+  { id: "alem01", href: "/tour/alem01" },
+  { id: "orion01", href: "/galeria/orion01" },
+  { id: "moto01", href: "/tour/moto01" },
+  { id: "dexter01", href: "/tour/dexter01" },
+  { id: "top501", href: "/tour/top501" },
+  { id: "top601", href: "/tour/top601" },
+  { id: "casali00", href: "#casali00" },
+  { id: "bahia01", href: "/galeria/bahia01" },
+  { id: "varoba01", href: "/tour/varoba01" },
+  { id: "alba01", href: "/tour/alba01" },
+  { id: "iagro01", href: "/galeria/iagro01" },
+  { id: "ragazzi01", href: "/tour/ragazzi01" },
+  { id: "tekno01", href: "/tour/tekno01" },
+  { id: "atila01", href: "/tour/atila01" },
 ];
 ---
 
@@ -27,8 +27,8 @@ const empresas = [
   </h2>
   <div class="grid grid-cols-4 sm:grid-cols-5 gap-6 justify-items-center">
     {
-      empresas.map((id) => (
-        <a href={`#${id}`}>
+      empresas.map(({ id, href }) => (
+        <a href={href}>
           <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
             <img
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
