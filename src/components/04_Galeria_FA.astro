@@ -19,19 +19,7 @@ import { trabajos } from "../trabajos";
       ))
     }
   </div>
-  <div class="grid grid-cols-2 xl:grid-cols-4 gap-4">
-    {
-      trabajos["mini01"].galeria.map((foto) => (
-        <img
-          class="aspect-[3/4] w-full border border-gray-300 rounded-lg"
-          src={foto}
-          alt={`imagen de ${foto}`}
-          loading="lazy"
-          decoding="async"
-        />
-      ))
-    }
-  </div>
+
   <div class="mt-4 w-full sm:w-[49.5%] mx-auto">
     <img
       class="w-full object-cover border border-gray-300 rounded-lg"
