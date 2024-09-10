@@ -3,6 +3,7 @@ import type { iTrabajos } from "./interfaces.ts"
 export const trabajos: iTrabajos = {
   "bahia01": {
     nombre: "Bahia Confort",
+    lugar: "mitre-casanova",
     categoria: "Apart Hotel",
     portada: "/assets/gallery/bahia1/bahiaconfort01.webp",
     logo: "./assets/logos/bahia_confort.svg",
@@ -28,6 +29,7 @@ export const trabajos: iTrabajos = {
   },
   "orion01": {
     nombre: "Hotel Orion",
+    lugar: "españa",
     categoria: "Apart Hotel",
     portada: "/assets/gallery/orion1/orion0.webp",
     logo: "./assets/logos/hotel_orion.svg",
@@ -47,6 +49,7 @@ export const trabajos: iTrabajos = {
   },
   "alem01": {
     nombre: "Punto Alem",
+    lugar: "alem",
     categoria: "Salones",
     portada: "/assets/logos/punto_alem.svg",
     logo: "./assets/logos/punto_alem.svg",
@@ -55,6 +58,7 @@ export const trabajos: iTrabajos = {
   },
   "top501": {
     nombre: "Top 5",
+    lugar: "san-martin",
     categoria: "Salones",
     portada: "/assets/logos/top5.svg",
     logo: "./assets/logos/top5.svg",
@@ -63,6 +67,7 @@ export const trabajos: iTrabajos = {
   },
   "top601": {
     nombre: "Top 6",
+    lugar: "charlone",
     categoria: "Salones",
     portada: "/assets/logos/top6.svg",
     logo: "./assets/logos/top6.svg",
@@ -71,6 +76,7 @@ export const trabajos: iTrabajos = {
   },
   "casali00": {
     nombre: "Casali Prop",
+    lugar: "monte-hermoso01",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali0/casaliprop6.webp",
     logo: "./assets/logos/casali.svg",
@@ -87,6 +93,7 @@ export const trabajos: iTrabajos = {
   },
   "casali01": {
     nombre: "Casali Prop",
+    lugar: "saihueche",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali1/casaliprop1.webp",
     logo: "./assets/logos/casali.svg",
@@ -103,6 +110,7 @@ export const trabajos: iTrabajos = {
   },
   "casali02": {
     nombre: "Casali Prop",
+    lugar: "balboa",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali2/casaliprop1.webp",
     logo: "./assets/logos/casali.svg",
@@ -119,6 +127,7 @@ export const trabajos: iTrabajos = {
   },
   "casali03": {
     nombre: "Casali Prop",
+    lugar: "patagonia01",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali3/casaliprop11.webp",
     logo: "./assets/logos/casali.svg",
@@ -139,6 +148,7 @@ export const trabajos: iTrabajos = {
   },
   "casali04": {
     nombre: "Casali Prop",
+    lugar: "monte-hermoso02",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali4/casaliprop04.webp",
     logo: "./assets/logos/casali.svg",
@@ -157,12 +167,12 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali4/casaliprop12.webp",
       "/assets/gallery/casali4/casaliprop13.webp",
       "/assets/gallery/casali4/casaliprop14.webp",
-      "/assets/gallery/casali4/casaliprop15.webp",
     ],
     tour: "https://www.keepeyeonball.com/Tour/5a9f008e-d8c7-42af-812a-36ef16abc16d",
   },
   "casali05": {
     nombre: "Casali Prop",
+    lugar: "patagonia02",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali5/casaliprop1.webp",
     logo: "./assets/logos/casali.svg",
@@ -179,6 +189,7 @@ export const trabajos: iTrabajos = {
   },
   "casali06": {
     nombre: "Casali Prop",
+    lugar: "punta-este",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali6/casaliprop03.webp",
     logo: "./assets/logos/casali.svg",
@@ -201,6 +212,7 @@ export const trabajos: iTrabajos = {
   },
   "casali07": {
     nombre: "Casali Prop",
+    lugar: "soler88",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali7/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -221,6 +233,7 @@ export const trabajos: iTrabajos = {
   },
   "casali08": {
     nombre: "Casali Prop",
+    lugar: "caleu-caleu",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali8/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -250,6 +263,7 @@ export const trabajos: iTrabajos = {
   },
   "casali09": {
     nombre: "Casali Prop",
+    lugar: "alem823",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali9/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -274,12 +288,13 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali9/casaliprop18.webp",
       "/assets/gallery/casali9/casaliprop19.webp",
       "/assets/gallery/casali9/casaliprop20.webp",
-      "/assets/gallery/casali9/casaliprop22.webp",
+      "/assets/gallery/casali9/casaliprop21.webp",
     ],
     tour: "https://kuula.co/share/collection/7ck0h?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.3&thumbs=1&alpha=0.60&inst=es",
   },
   "casali10": {
     nombre: "Casali Prop",
+    lugar: "cooperacion2",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali10/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -300,6 +315,7 @@ export const trabajos: iTrabajos = {
   },
   "casali11": {
     nombre: "Casali Prop",
+    lugar: "solares-norte",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali11/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -335,6 +351,7 @@ export const trabajos: iTrabajos = {
   },
   "casali12": {
     nombre: "Casali Prop",
+    lugar: "torres-al-mar-11",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali12/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -364,6 +381,7 @@ export const trabajos: iTrabajos = {
   },
   "casali13": {
     nombre: "Casali Prop",
+    lugar: "torres-al-mar-5",
     categoria: "Propiedades",
     portada: "/assets/gallery/casali13/casaliprop01.webp",
     logo: "./assets/logos/casali.svg",
@@ -385,6 +403,131 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali13/casaliprop15.webp",
     ],
     tour: "https://kuula.co/share/collection/7cxGG?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.3&thumbs=1&alpha=0.60&inst=es",
+  },
+
+  "casali14": {
+    nombre: "Casali Prop",
+    lugar: "CuernavacaA",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali14/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali14/casaliprop01.webp",
+      "/assets/gallery/casali14/casaliprop02.webp",
+      "/assets/gallery/casali14/casaliprop03.webp",
+      "/assets/gallery/casali14/casaliprop04.webp",
+      "/assets/gallery/casali14/casaliprop05.webp",
+      "/assets/gallery/casali14/casaliprop06.webp",
+      "/assets/gallery/casali14/casaliprop07.webp",
+      "/assets/gallery/casali14/casaliprop08.webp",
+      "/assets/gallery/casali14/casaliprop09.webp",
+      "/assets/gallery/casali14/casaliprop10.webp",
+      "/assets/gallery/casali14/casaliprop11.webp",
+      "/assets/gallery/casali14/casaliprop12.webp",
+      "/assets/gallery/casali14/casaliprop13.webp",
+      "/assets/gallery/casali14/casaliprop14.webp",
+      "/assets/gallery/casali14/casaliprop15.webp",
+      "/assets/gallery/casali14/casaliprop16.webp",
+    ],
+    tour: "",
+  },
+
+  "casali15": {
+    nombre: "Casali Prop",
+    lugar: "CuarnavacaB",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali15/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali15/casaliprop01.webp",
+      "/assets/gallery/casali15/casaliprop02.webp",
+      "/assets/gallery/casali15/casaliprop03.webp",
+      "/assets/gallery/casali15/casaliprop04.webp",
+      "/assets/gallery/casali15/casaliprop05.webp",
+      "/assets/gallery/casali15/casaliprop06.webp",
+      "/assets/gallery/casali15/casaliprop07.webp",
+      "/assets/gallery/casali15/casaliprop08.webp",
+      "/assets/gallery/casali15/casaliprop09.webp",
+      "/assets/gallery/casali15/casaliprop10.webp",
+      "/assets/gallery/casali15/casaliprop11.webp",
+      "/assets/gallery/casali15/casaliprop12.webp",
+      "/assets/gallery/casali15/casaliprop13.webp",
+    ],
+    tour: "",
+  },
+
+  "casali16": {
+    nombre: "Casali Prop",
+    lugar: "LosTroncosA",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali16/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali16/casaliprop01.webp",
+      "/assets/gallery/casali16/casaliprop02.webp",
+      "/assets/gallery/casali16/casaliprop03.webp",
+      "/assets/gallery/casali16/casaliprop04.webp",
+      "/assets/gallery/casali16/casaliprop05.webp",
+      "/assets/gallery/casali16/casaliprop06.webp",
+      "/assets/gallery/casali16/casaliprop07.webp",
+      "/assets/gallery/casali16/casaliprop08.webp",
+      "/assets/gallery/casali16/casaliprop09.webp",
+      "/assets/gallery/casali16/casaliprop10.webp",
+      "/assets/gallery/casali16/casaliprop11.webp",
+      "/assets/gallery/casali16/casaliprop12.webp",
+      "/assets/gallery/casali16/casaliprop13.webp",
+      "/assets/gallery/casali16/casaliprop14.webp",
+      "/assets/gallery/casali16/casaliprop15.webp",
+    ],
+    tour: "",
+  },
+
+  "casali17": {
+    nombre: "Casali Prop",
+    lugar: "LosTroncosB",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali17/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali17/casaliprop01.webp",
+      "/assets/gallery/casali17/casaliprop02.webp",
+      "/assets/gallery/casali17/casaliprop03.webp",
+      "/assets/gallery/casali17/casaliprop04.webp",
+      "/assets/gallery/casali17/casaliprop05.webp",
+      "/assets/gallery/casali17/casaliprop06.webp",
+      "/assets/gallery/casali17/casaliprop07.webp",
+      "/assets/gallery/casali17/casaliprop08.webp",
+      "/assets/gallery/casali17/casaliprop09.webp",
+      "/assets/gallery/casali17/casaliprop10.webp",
+      "/assets/gallery/casali17/casaliprop11.webp",
+      "/assets/gallery/casali17/casaliprop12.webp",
+      "/assets/gallery/casali17/casaliprop13.webp",
+    ],
+    tour: "",
+  },
+
+  "casali18": {
+    nombre: "Casali Prop",
+    lugar: "3DeFebrero",
+    categoria: "Propiedades",
+    portada: "/assets/gallery/casali18/casaliprop01.webp",
+    logo: "./assets/logos/casali.svg",
+    galeria: [
+      "/assets/gallery/casali18/casaliprop01.webp",
+      "/assets/gallery/casali18/casaliprop02.webp",
+      "/assets/gallery/casali18/casaliprop03.webp",
+      "/assets/gallery/casali18/casaliprop04.webp",
+      "/assets/gallery/casali18/casaliprop05.webp",
+      "/assets/gallery/casali18/casaliprop06.webp",
+      "/assets/gallery/casali18/casaliprop07.webp",
+      "/assets/gallery/casali18/casaliprop08.webp",
+      "/assets/gallery/casali18/casaliprop09.webp",
+      "/assets/gallery/casali18/casaliprop10.webp",
+      "/assets/gallery/casali18/casaliprop11.webp",
+      "/assets/gallery/casali18/casaliprop12.webp",
+      "/assets/gallery/casali18/casaliprop13.webp",
+    ],
+    tour: "",
   },
 
   "iagro01": {
@@ -482,11 +625,11 @@ export const trabajos: iTrabajos = {
 export const categorias = [
   {
     nombre: "Apart Hotel",
-    coleccion: ["bahia01", "orion01"]
+    coleccion: ["bahia01", "orion01", "casali14", "casali15", "casali16", "casali17"]
   },
   {
     nombre: "Propiedades",
-    coleccion: ["casali11", "casali12", "casali08", "casali09", "casali06", "casali13", "casali00", "casali10", "casali01", "casali02", "casali03", "casali04", "casali07", "casali05"]
+    coleccion: ["casali11", "casali12", "casali08", "casali09", "casali06", "casali13", "casali00", "casali10", "casali01", "casali18", "casali02", "casali03", "casali04", "casali07", "casali05"]
   },
   {
     nombre: "Salones",

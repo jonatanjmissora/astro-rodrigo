@@ -32,6 +32,7 @@ export interface iTrabajos {
 
 export interface iTrabajo {
   nombre: string;
+  lugar: string;
   categoria: string;
   portada: string;
   logo: string;
