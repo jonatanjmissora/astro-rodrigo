@@ -25,7 +25,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/bahia1/bahiaconfort15.webp",
       "/assets/gallery/bahia1/bahiaconfort16.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/78240ece-c23f-41b8-87c1-86f565a31cb8"
+    tour: ""
   },
   "orion01": {
     nombre: "Hotel Orion",
@@ -45,7 +45,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/orion1/orion8.webp",
       "/assets/gallery/orion1/orion9.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/7c4bc1e6-ae3d-449d-8da8-f86cbae58a42"
+    tour: ""
   },
   "alem01": {
     nombre: "Punto Alem",
@@ -54,7 +54,7 @@ export const trabajos: iTrabajos = {
     portada: "/assets/logos/punto_alem.svg",
     logo: "./assets/logos/punto_alem.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/45cd220d-41f4-44f8-aa26-c1a485a47f86"
+    tour: "https://kuula.co/share/collection/7bq00?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.3&thumbs=1&alpha=0.60&inst=es"
   },
   "top501": {
     nombre: "Top 5",
@@ -63,7 +63,7 @@ export const trabajos: iTrabajos = {
     portada: "/assets/logos/top5.svg",
     logo: "./assets/logos/top5.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/de891ac9-ac4a-4a6a-be79-9b561a6772d6/4K?sc=8&y=180&p=0&tz=100&r=0.00;0.00&l=0.00;0.00&mz=0.00&d=0&m=0",
+    tour: "https://kuula.co/share/collection/7bPvP?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.3&thumbs=1&alpha=0.60&inst=es",
   },
   "top601": {
     nombre: "Top 6",
@@ -72,7 +72,7 @@ export const trabajos: iTrabajos = {
     portada: "/assets/logos/top6.svg",
     logo: "./assets/logos/top6.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/3ec16edb-1db2-434a-9020-d8e55f04fb1f/4K?sc=8&y=180&p=0&tz=100&r=0.00;0.00&l=0.00;0.00&mz=0.00&d=0&m=0",
+    tour: "",
   },
   "casali00": {
     nombre: "Casali Prop",
@@ -106,7 +106,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali1/casaliprop6.webp",
       "/assets/gallery/casali1/casaliprop7.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/d5dc8dcf-cf4d-4bbf-99d1-c4f72b2dd875",
+    tour: "",
   },
   "casali02": {
     nombre: "Casali Prop",
@@ -123,7 +123,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali2/casaliprop6.webp",
       "/assets/gallery/casali2/casaliprop7.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/d850794d-c703-427e-9707-5ce711bdf587",
+    tour: "",
   },
   "casali03": {
     nombre: "Casali Prop",
@@ -144,7 +144,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali3/casaliprop10.webp",
       "/assets/gallery/casali3/casaliprop11.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/559ef560-2c52-4193-ac0b-d8ee46249b62",
+    tour: "",
   },
   "casali04": {
     nombre: "Casali Prop",
@@ -168,7 +168,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali4/casaliprop13.webp",
       "/assets/gallery/casali4/casaliprop14.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/5a9f008e-d8c7-42af-812a-36ef16abc16d",
+    tour: "",
   },
   "casali05": {
     nombre: "Casali Prop",
@@ -185,7 +185,7 @@ export const trabajos: iTrabajos = {
       "/assets/gallery/casali5/casaliprop6.webp",
       "/assets/gallery/casali5/casaliprop7.webp",
     ],
-    tour: "https://www.keepeyeonball.com/Tour/deaabb51-4c18-4a43-acf3-3c4e52a06201",
+    tour: "",
   },
   "casali06": {
     nombre: "Casali Prop",
@@ -532,6 +532,7 @@ export const trabajos: iTrabajos = {
 
   "iagro01": {
     nombre: "I.A.G.R.O Inmobiliaria",
+    lugar: "iagro",
     categoria: "Comercios",
     portada: "./assets/logos/iagro.svg",
     logo: "./assets/logos/iagro.svg",
@@ -544,6 +545,7 @@ export const trabajos: iTrabajos = {
   },
   "mini01": {
     nombre: "Fine Art & Minimalismo",
+    lugar: "mini01",
     categoria: "Propia",
     portada: "/assets/gallery/Minimalismo/minimal1.webp",
     logo: "",
@@ -566,59 +568,66 @@ export const trabajos: iTrabajos = {
 
   "moto01": {
     nombre: "Moto Manía",
+    lugar: "moto01",
     categoria: "Comercios",
     portada: "/assets/logos/moto_mania.svg",
     logo: "./assets/logos/moto_mania.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/f021accf-ad02-4b26-b2e1-2213c2dc6ffd",
+    tour: "https://kuula.co/share/collection/7bqKQ?logo=1&info=1&fs=1&vr=0&zoom=1&gyro=0&autorotate=0.3&thumbs=1&alpha=0.60&inst=es",
   },
   "dexter01": {
     nombre: "Dexter",
+    lugar: "dexter01",
     categoria: "Comercios",
     portada: "/assets/logos/dexter.svg",
     logo: "./assets/logos/dexter.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/f0ebfa0d-a7ee-42ca-a954-c6bd24ef254a",
+    tour: "",
   },
   "varoba01": {
     nombre: "Varoba",
+    lugar: "varoba01",
     categoria: "Comercios",
     portada: "/assets/logos/varoba.svg",
     logo: "./assets/logos/varoba.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/fd5fa629-5246-4aa5-9bbc-c8e98e39285b",
+    tour: "",
   },
   "ragazzi01": {
     nombre: "Ragazzi",
+    lugar: "ragazzi01",
     categoria: "Comercios",
     portada: "/assets/logos/ragazzi.svg",
     logo: "./assets/logos/ragazzi.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/b7eff8f5-2b04-400a-830e-cbb99f3f7e3a",
+    tour: "",
   },
   "tekno01": {
     nombre: "Teknomanía",
+    lugar: "tekno01",
     categoria: "Comercios",
     portada: "/assets/logos/teknomania.svg",
     logo: "./assets/logos/teknomania.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/9fe2704e-d383-46df-a8e1-8c9c613e5288",
+    tour: "",
   },
   "alba01": {
     nombre: "Alba Garcia",
+    lugar: "alba01",
     categoria: "Comercios",
     portada: "/assets/logos/alba_garcia.svg",
     logo: "./assets/logos/alba_garcia.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/5eee8952-4066-4f00-9336-8b9c4c47005c",
+    tour: "",
   },
   "atila01": {
     nombre: "Atila",
+    lugar: "atila01",
     categoria: "Comercios",
     portada: "/assets/logos/atila.svg",
     logo: "./assets/logos/atila.svg",
     galeria: [],
-    tour: "https://www.keepeyeonball.com/Tour/e80a543d-ff46-46d3-b52a-2d0cd4aee1aa",
+    tour: "",
   },
 }
 
@@ -637,6 +646,6 @@ export const categorias = [
   },
   {
     nombre: "Comercios",
-    coleccion: ["moto01", "dexter01", "varoba01", "ragazzi01", "tekno01", "alba01", "atila01", "iagro01"]
+    coleccion: ["moto01", "iagro01"]
   }
 ]
