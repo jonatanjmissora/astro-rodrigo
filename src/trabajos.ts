@@ -642,7 +642,7 @@ export const categorias = [
   },
   {
     nombre: "Salones",
-    coleccion: ["alem01", "top501", "top601"]
+    coleccion: ["alem01", "top501"]
   },
   {
     nombre: "Comercios",

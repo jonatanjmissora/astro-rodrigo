@@ -5,18 +5,45 @@ const empresas = [
   { id: "alem01", href: "/tour/alem01" },
   { id: "orion01", href: "/galeria/orion01" },
   { id: "moto01", href: "/tour/moto01" },
-  { id: "dexter01", href: "/tour/dexter01" },
+  { id: "dexter01", href: "" },
   { id: "top501", href: "/tour/top501" },
-  { id: "top601", href: "/tour/top601" },
+  { id: "top601", href: "" },
   { id: "casali00", href: "#casali00" },
   { id: "bahia01", href: "/galeria/bahia01" },
-  { id: "varoba01", href: "/tour/varoba01" },
-  { id: "alba01", href: "/tour/alba01" },
+  { id: "varoba01", href: "" },
+  { id: "alba01", href: "" },
   { id: "iagro01", href: "/galeria/iagro01" },
-  { id: "ragazzi01", href: "/tour/ragazzi01" },
-  { id: "tekno01", href: "/tour/tekno01" },
-  { id: "atila01", href: "/tour/atila01" },
+  { id: "ragazzi01", href: "" },
+  { id: "tekno01", href: "" },
+  { id: "atila01", href: "" },
 ];
+{
+  // empresas.map(({ id, href }) => (
+  // href !== "" ? (
+  //   <a href={href}>
+  //     <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+  //       <img
+  //         class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+  //         src={trabajos[id].logo}
+  //         alt={`imagen o logo de ${id}`}
+  //         loading="lazy"
+  //         decoding="async"
+  //       />
+  //     </picture>
+  //   </a>
+  // ) : (
+  //   <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+  //     <img
+  //       class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+  //       src={trabajos[id].logo}
+  //       alt={`imagen o logo de ${id}`}
+  //       loading="lazy"
+  //       decoding="async"
+  //     />
+  //   </picture>
+  // );
+  // ))
+}
 ---
 
 <section class="mt-36 w-full">
@@ -27,19 +54,31 @@ const empresas = [
   </h2>
   <div class="grid grid-cols-4 sm:grid-cols-5 gap-6 justify-items-center">
     {
-      empresas.map(({ id, href }) => (
-        <a href={href}>
+      empresas.map((empresa) =>
+        empresa.href ? (
+          <a href={empresa.href}>
+            <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+              <img
+                class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                src={trabajos[empresa.id].logo}
+                alt={`imagen o logo de ${empresa.id}`}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </a>
+        ) : (
           <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
             <img
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-              src={trabajos[id].logo}
-              alt={`imagen o logo de ${id}`}
+              src={trabajos[empresa.id].logo}
+              alt={`imagen o logo de ${empresa.id}`}
               loading="lazy"
               decoding="async"
             />
           </picture>
-        </a>
-      ))
+        ),
+      )
     }
   </div>
 </section>
