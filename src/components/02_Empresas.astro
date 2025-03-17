@@ -55,9 +55,9 @@ const empresas = [
   <div class="grid grid-cols-4 sm:grid-cols-5 gap-6 justify-items-center">
     {
       empresas.map((empresa) =>
-        empresa.href ? (
-          <a href={empresa.href}>
-            <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+        empresa.href !== "" ? (
+          <a class="w-full h-full" href={empresa.href}>
+            <picture class="w-full h-full border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
               <img
                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 src={trabajos[empresa.id].logo}
@@ -68,7 +68,7 @@ const empresas = [
             </picture>
           </a>
         ) : (
-          <picture class="border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
+          <picture class="w-full h-full border border-gray-300 rounded-xl my-shadow-outline overflow-hidden cursor-pointer">
             <img
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               src={trabajos[empresa.id].logo}
